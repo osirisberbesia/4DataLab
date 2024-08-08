@@ -1,9 +1,9 @@
 # Proyecto 4 - DataLab
 ## Amazon Sales
 
-Integrantes:
-[Berbesia Osiris](https://github.com/osirisberbesia/)
-[Fonseca Karen](https://github.com/Karenfonseca22)
+### Integrantes:
+* [Berbesia Osiris](https://github.com/osirisberbesia/)
+* [Fonseca Karen](https://github.com/Karenfonseca22)
 
 ### Conjunto de datos a analizar
 
