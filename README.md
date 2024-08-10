@@ -1,4 +1,4 @@
-=======
+
 # Proyecto 4 - DataLab
 ## Amazon Sales
 
@@ -93,3 +93,4 @@ Dando como resultado, que tenemos 16 datos que atender. Sin embargo, se decide d
 | product_id |  114 | Ninguna acción. Esta variable puede tener duplicados |
 | rating |  1439 | Ninguna acción. Esta variable puede tener duplicados |
 | rating_count |  321 | Ninguna acción. Esta variable puede tener duplicados |
+
