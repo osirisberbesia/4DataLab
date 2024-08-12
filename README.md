@@ -1,6 +1,8 @@
 # Proyecto 4 - DataLab
 ## Amazon Sales
 
+ [![HitCount](https://hits.dwyl.com/osirisberbesia/4DataLab.svg?style=flat-square)](http://hits.dwyl.com/osirisberbesia/4DataLab)
+
 ## Integrantes:
 * [Berbesia Osiris](https://github.com/osirisberbesia/)
 * [Fonseca Karen](https://github.com/Karenfonseca22)
