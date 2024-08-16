@@ -198,12 +198,8 @@ Grafica 1
 
 ![image](https://github.com/user-attachments/assets/970adb30-c5a2-4dfa-ad97-e30988a2c22a)
 
-Grafica 2
 
-![image](https://github.com/user-attachments/assets/b72b6eb4-bdfb-4aaf-be79-3659ac2bcc37)
-
-
-> Esta hipotesis es negativa, no tienen relación el porcentaje de descuento con su puntuación, esto se pudo validar a través del test de pearson con un resultado de -0.017, en Python, como se ve en la segunda grafica, y en las graficas de Tableau.
+> Esta hipotesis es negativa, no tienen relación el porcentaje de descuento con su puntuación, esto se pudo validar a través del test de pearson con un resultado de -0.017, y en las graficas de Tableau.
 
 
 5. **Descuento por categoría:** Variaciones significativas en los porcentajes de descuento entre productos de diferentes categorías.
