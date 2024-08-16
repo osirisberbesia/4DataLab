@@ -170,7 +170,7 @@ No se tuvieron en cuenta en la unión de las tablas ya que pueden llegar a sesga
 
 Para este análisis se exploraron la visualizaron de las hipotesis planteadas al inicio del proyecto.
 
-**Los usuarios confían más en las calificaciones que son más altas, en comparación a las calificaciones bajas.:** confiabilidad con el conteo de votos, y la categorización del rating (alto, bajo).
+1. **Los usuarios confían más en las calificaciones que son más altas, en comparación a las calificaciones bajas.:** confiabilidad con el conteo de votos, y la categorización del rating (alto, bajo).
 
 ![image](https://github.com/user-attachments/assets/9b66698f-546c-4025-98ad-66182f91bef7)
 
@@ -180,11 +180,37 @@ Para este análisis se exploraron la visualizaron de las hipotesis planteadas al
 
 > Se exploró la correlación entre las variables rating y rating_count, obteniendo un resultado de 0.09. Esto indica que existe una correlación positiva muy débil entre ellas, lo que sugiere que no se afectan significativamente entre sí.
 
+2. **Calificación promedio por categoría:** Diferencias significativas en la calificación promedio entre productos de distintas categorías.
+
+![image](https://github.com/user-attachments/assets/5e372943-e4b6-4b64-ac75-94650de6f923)
+
+> Esta hipotesis es falsa, no hay diferencias significativas entre los promedios de las categorias generales.
+
+3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas que aquellos con reseñas solo textuales.
+
+![image](https://github.com/user-attachments/assets/f5c3ace1-770d-4b14-b68f-d3427c45c799)
+
+> Esta hipotesis es verdadera, en las calificaciones altas hay mas imagenes en su review_content
+
+4. **Relación entre descuento y puntuación:** A mayor descuento, mejor será la calificación del producto.
+
+Grafica 1
+
+![image](https://github.com/user-attachments/assets/970adb30-c5a2-4dfa-ad97-e30988a2c22a)
+
+Grafica 2
+
+![image](https://github.com/user-attachments/assets/b72b6eb4-bdfb-4aaf-be79-3659ac2bcc37)
 
 
+> Esta hipotesis es negativa, no tienen relación el porcentaje de descuento con su puntuación, esto se pudo validar a través del test de pearson con un resultado de -0.017, en Python, como se ve en la segunda grafica, y en las graficas de Tableau.
 
 
+5. **Descuento por categoría:** Variaciones significativas en los porcentajes de descuento entre productos de diferentes categorías.
 
+![image](https://github.com/user-attachments/assets/100a28ba-e010-4422-86be-323a1cc9c88a)
+
+> Esta hipotesis es verdadera, si hay diferencias significativas entre los porcentajes de descuento entre productos de diferentes categorías. La diferencia mas grande es entre Home Improvement y Office Products. Un hallazgo es que la categoria de Toys&Games no tienen descuento
 
 
 
