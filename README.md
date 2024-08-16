@@ -119,5 +119,20 @@ Quedan 1351 datos posterior a la limpieza de duplicados.
 |discounted_percentage | category_discount | Separa el porcentaje de descuento en 4 grupos, leve (< 0.31), moderado (entre 0.31 y 0.49), intermedio (entre 0.49 y 0.62), significativo ( mayores a 0.62) |
 | rating | category_rating | Se categorizaron los rating 1, 2, 3 como 'Bajo', y 4 , 5 de rating como 'Alto'|
 |rating_count | category_rating_count | Segmentación del conteo de rating por cuartiles, las categorias son, Poco confiable (menores a 932), Medio confiable ( entre 932 y 3714), Moderadamente confiable (entre 3714 y 13156), Confiable (Mayores a 13156) |
+| review_content | image_count | Conteo de link de imagenes dentro del contenido de review |
+| category_rating y category_rating_count | rating_segmentation| Concatenacion de las variables creadas category_rating y category_rating_count, un ejemplo de retorno es 'Alto (Poco confiable)' |
+
+# Cambio de tipo de dato
+
+Para la variable 'rating' se cambio de STRING a FLOAT64, con la función CAST
+
+# Identificar y manejar datos discrepantes
+
+En la variable 'rating' se encontro un dato con el simbolo '|', este campo se reemplazo con el numero 0
+
+# Manejo de outliers para tabla amazon_review
+
+Boxplot de variable reviews_content (Variable que me cuenta los review_id)
+
 
 
