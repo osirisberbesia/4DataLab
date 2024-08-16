@@ -172,6 +172,19 @@ Para este análisis se exploraron la visualizaron de las hipotesis planteadas al
 
 **Los usuarios confían más en las calificaciones que son más altas, en comparación a las calificaciones bajas.:** confiabilidad con el conteo de votos, y la categorización del rating (alto, bajo).
 
+![image](https://github.com/user-attachments/assets/9b66698f-546c-4025-98ad-66182f91bef7)
+
+> Esta hipotesis es verdadera, se puede obervar en el grafico que en los productos con un rating clasificado como Alto, tienen mas votos que en el de Bajo
+
+![image](https://github.com/user-attachments/assets/252dfeda-ea32-4608-a095-d40d19affa24)
+
+> Se exploró la correlación entre las variables rating y rating_count, obteniendo un resultado de 0.09. Esto indica que existe una correlación positiva muy débil entre ellas, lo que sugiere que no se afectan significativamente entre sí.
+
+
+
+
+
+
 
 
 
