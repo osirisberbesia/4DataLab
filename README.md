@@ -7,7 +7,7 @@
 
 # Hipótesis del caso
 
-1. **Los usuarios confían más en las calificaciones que son más altas, en comparación a las calificaciones bajas.:** La relación entre la fiabilidad de las calificaciones y el número de votos.
+1. **Los usuarios confían más en las calificaciones que son más altas, en comparación a las calificaciones bajas.:** confiabilidad con el conteo de votos, y la categorización del rating (alto, bajo).
 2. **Calificación promedio por categoría:** Diferencias significativas en la calificación promedio entre productos de distintas categorías.
 3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas que aquellos con reseñas solo textuales.
 4. **Relación entre descuento y puntuación:** A mayor descuento, mejor será la calificación del producto.
@@ -122,7 +122,7 @@ Quedan 1351 datos posterior a la limpieza de duplicados.
 | review_content | image_count | Conteo de link de imagenes dentro del contenido de review |
 | category_rating y category_rating_count | rating_segmentation| Concatenacion de las variables creadas category_rating y category_rating_count, un ejemplo de retorno es 'Alto (Poco confiable)' |
 
-## Cambio de tipo de dato
+# Cambio de tipo de dato
 
 Para la variable 'rating' se cambio de STRING a FLOAT64, con la función CAST
 
@@ -158,8 +158,19 @@ Boxplot de discounted_percentage
 
 ![discounted_percentage boxplot](https://github.com/user-attachments/assets/0cfc352a-9ec9-4c81-a505-6406801c5c56)
 
+### Accionables para outliers
 
+No se tuvieron en cuenta en la unión de las tablas ya que pueden llegar a sesgar los resultados, por sus datos extremos.
 
+### Resumen de limpieza de datos 
+
+> Despues de realizar la limpieza de datos, en donde se identificaron y manejaron datos nulos, duplicados, discrepantes y atipicos (outliers), se unieron las tablas con el nombre "amazon_unificado".
+
+## Análisis exploratorio
+
+Para este análisis se exploraron la visualizaron de las hipotesis planteadas al inicio del proyecto.
+
+**Los usuarios confían más en las calificaciones que son más altas, en comparación a las calificaciones bajas.:** confiabilidad con el conteo de votos, y la categorización del rating (alto, bajo).
 
 
 
