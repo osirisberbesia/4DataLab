@@ -122,7 +122,7 @@ Quedan 1351 datos posterior a la limpieza de duplicados.
 | review_content | image_count | Conteo de link de imagenes dentro del contenido de review |
 | category_rating y category_rating_count | rating_segmentation| Concatenacion de las variables creadas category_rating y category_rating_count, un ejemplo de retorno es 'Alto (Poco confiable)' |
 
-# Cambio de tipo de dato
+## Cambio de tipo de dato
 
 Para la variable 'rating' se cambio de STRING a FLOAT64, con la función CAST
 
@@ -133,6 +133,24 @@ En la variable 'rating' se encontro un dato con el simbolo '|', este campo se re
 # Manejo de outliers para tabla amazon_review
 
 Boxplot de variable reviews_content (Variable que me cuenta los review_id)
+
+![image](https://github.com/user-attachments/assets/4ccce97e-899d-4062-a8ac-e43395451669)
+
+Boxplot de variable rating (Variable con su calificación)
+
+![rating box](https://github.com/user-attachments/assets/76be8013-ae64-41d1-9cf8-6410af8ec2f9)
+
+Boxplot de variable rating_count (conteo de personas que votaron por su calificación)
+
+![rating_count boxplot](https://github.com/user-attachments/assets/66d62105-cf05-4875-9b7d-a47d1cfbffa7)
+
+# Manejo de outliers para tabla amazon_product
+
+Boxplot de variable discounted_price
+
+
+
+
 
 
 
