@@ -148,6 +148,21 @@ Boxplot de variable rating_count (conteo de personas que votaron por su califica
 
 Boxplot de variable discounted_price
 
+![discounted_price box](https://github.com/user-attachments/assets/e997ce96-3c15-4ede-a43c-2e416b23ce4a)
+
+Boxplot actual_price
+
+![actual_price boxplot](https://github.com/user-attachments/assets/4a8b0226-b959-4b1a-830a-d34ff239716a)
+
+Boxplot de discounted_percentage
+
+![discounted_percentage boxplot](https://github.com/user-attachments/assets/0cfc352a-9ec9-4c81-a505-6406801c5c56)
+
+
+
+
+
+
 
 
 
