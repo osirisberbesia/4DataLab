@@ -7,7 +7,7 @@
 
 # Hipótesis del caso
 
-1. **Fiabilidad de la calificación según los votos:** La relación entre la fiabilidad de las calificaciones y el número de votos.
+1. **Los usuarios confían más en las calificaciones que son más altas, en comparación a las calificaciones bajas.:** La relación entre la fiabilidad de las calificaciones y el número de votos.
 2. **Calificación promedio por categoría:** Diferencias significativas en la calificación promedio entre productos de distintas categorías.
 3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas que aquellos con reseñas solo textuales.
 4. **Relación entre descuento y puntuación:** A mayor descuento, mejor será la calificación del producto.
@@ -113,6 +113,11 @@ Quedan 1351 datos posterior a la limpieza de duplicados.
 
 | Variable origen |Variable creada | Significado | 
 |--|--|--|
-| review_id |  reviews_count| Separa los valores de los ID en forma de Array, los cuales están separados uno de los otros por comas en la variable origen, para cuantificar cuantos reviews se registraron en ese producto | 
+| review_id |  reviews_count| Separa los valores de los ID en forma de Array, los cuales están separados uno de los otros por comas en la variable origen, para cuantificar cuantos reviews se registraron en ese producto |
+| category | general_category | Se eligió la primera categoría de la descripción de categorías en la que se encuentra el producto. |
+| category | specific_category | Dado que la descripción de categorías va desde la más general a la más específica, se tomó en cuenta la última categoría en la que se encuentra el producto para crear la variable 'specific_category'.|
+|discounted_percentage | category_discount | Separa el porcentaje de descuento en 4 grupos, leve (< 0.31), moderado (entre 0.31 y 0.49), intermedio (entre 0.49 y 0.62), significativo ( mayores a 0.62) |
+| rating | category_rating | Se categorizaron los rating 1, 2, 3 como 'Bajo', y 4 , 5 de rating como 'Alto'|
+|rating_count | category_rating_count | Segmentación del conteo de rating por cuartiles, las categorias son, Poco confiable (menores a 932), Medio confiable ( entre 932 y 3714), Moderadamente confiable (entre 3714 y 13156), Confiable (Mayores a 13156) |
 
 
