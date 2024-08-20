@@ -10,5 +10,12 @@
             "username": "osiris",
             "password": "121041"
         }
+    ],
+    "cSpell.words": [
+        "datalab",
+        "figsize",
+        "osiris",
+        "psycopg",
+        "sqlalchemy"
     ]
 }
