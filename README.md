@@ -182,9 +182,11 @@ Para este análisis se exploraron la visualizaron de las hipotesis planteadas al
 
 2. **Calificación promedio por categoría:** Diferencias significativas en la calificación promedio entre productos de distintas categorías.
 
-![image](https://github.com/user-attachments/assets/5e372943-e4b6-4b64-ac75-94650de6f923)
+![image](https://github.com/user-attachments/assets/fbb0fe1a-7211-40dc-a4e8-81ccf6448f0e)
 
-> Esta hipotesis es falsa, no hay diferencias significativas entre los promedios de las categorias generales.
+![image](https://github.com/user-attachments/assets/6c157ba4-99a0-4573-bdf5-abd837e52668)
+
+> Esta hipotesis es verdadera, se puede observar que para la catergoria de Home&Kitchen y Electronics estan muy parejas sin embargo para las demas catgorias si se puede ver una diferencia en rating, segun el grafico de regresión lineal, tienen una relación negatvia debil.
 
 3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas que aquellos con reseñas solo textuales.
 
