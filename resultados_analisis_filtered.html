@@ -1,0 +1,935 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Resultados del Análisis</title>
+        <style>
+            .card-table {
+                border-collapse: separate;
+                border-spacing: 16px;
+                width: 100%;
+            }
+            .card-header {
+                background-color: #f1f1f1;
+                padding: 12px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+            .card-body {
+                background-color: white;
+                padding: 12px;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            }
+            .card-table tr:hover .card-body {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+            .filters {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .filter-box {
+                width: 24%;
+            }
+            #row-count {
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="filters">
+            <input class="filter-box" type="text" id="filter-general-cat" placeholder="Filtrar Categoría General">
+            <input class="filter-box" type="text" id="filter-specific-cat" placeholder="Filtrar Categoría Específica">
+            <input class="filter-box" type="text" id="filter-result" placeholder="Filtrar Resultado">
+            <input class="filter-box" type="text" id="filter-distribution" placeholder="Filtrar Tipo de Distribución">
+        </div>
+        <p id="row-count">Total de filas: 60</p>
+        <table class="card-table" border="1" class="dataframe" id="results-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th class="card-header">Categoría General</th>
+      <th class="card-header">Categoría Específica</th>
+      <th class="card-header">Resultado Shapiro Will</th>
+      <th class="card-header">Tipo de Distribución</th>
+      <th class="card-header">Tamaño de Muestra</th>
+      <th class="card-header">Hipótesis (H0)</th>
+      <th class="card-header">Prueba Recomendada</th>
+      <th class="card-header">Prueba Realizada</th>
+      <th class="card-header">P-Valor</th>
+      <th class="card-header">Resultado</th>
+      <th class="card-header">Por Qué</th>
+      <th class="card-header">Resultado Hipótesis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">BasicCases</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">4</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">3.35e-14</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">SmartTelevisions</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">35</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">2.57e-20</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">RemoteControls</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">48</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">5.71e-10</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">SmartWatches</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">39</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">2.95e-06</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">DisposableBatteries</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">7</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">5.01e-05</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">DomeCameras</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">5</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">2.73e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">BasicMobiles</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">5</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">2.52e-04</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">StandardTelevisions</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">6</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">6.20e-04</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">TVWall&CeilingMounts</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">6</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">4.47e-06</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">Smartphones</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">29</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">7.48e-13</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">WallChargers</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">13</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">8.45e-03</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">On-Ear</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">7</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">5.05e-08</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">Stands</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">9</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">3.48e-04</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">RechargeableBatteries</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">3.48e-25</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">HDMICables</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">17</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">1.65e-03</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">BluetoothSpeakers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">6</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">3.08e-05</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">AutomobileChargers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">4</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">5.09e-18</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">OutdoorSpeakers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">4</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">1.83e-12</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">GeneralPurposeBatteries&BatteryChargers</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">4</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">6.47e-03</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">MicroSD</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">4.51e-05</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">SelfieSticks</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">3.18e-03</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Electronics</td>
+      <td class="card-body">PowerBanks</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">7</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">1.88e-10</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">Paints</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">2.15e-34</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">HandBlenders</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">19</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">1.00e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">WaterFilters&Purifiers</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">12</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">1.19e-04</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">StorageWaterHeaters</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">12</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">5.23e-07</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">DigitalKitchenScales</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">10</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">1.89e-06</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">DryIrons</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">24</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">6.10e-21</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">LaundryBaskets</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">13</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">3.58e-23</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">Wet-DryVacuums</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">6</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">4.21e-04</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">EggBoilers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">11</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">7.88e-08</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">LintShavers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">22</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">2.91e-21</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">SandwichMakers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">11</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">4.87e-03</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">MiniFoodProcessors&Choppers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">8</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">8.24e-06</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">MixerGrinders</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">27</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">1.20e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">Kettle&ToasterSets</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">13</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">9.94e-12</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">WaterPurifierAccessories</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">11</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">7.16e-24</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">MeasuringSpoons</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">4.58e-19</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">ImmersionRods</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">9</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">7.48e-03</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">AirFryers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">5</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">1.63e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">HandheldVacuums</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">7</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">4.73e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">ExhaustFans</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">2.15e-04</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">WaterCartridges</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">1.66e-11</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">VacuumSealers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">7</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">3.12e-11</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">PressureWashers,Steam&WindowCleaners</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">1.83e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">Pop-upToasters</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">3.30e-07</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">MilkFrothers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">5.80e-04</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">HandMixers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">3.64e-04</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Home&Kitchen</td>
+      <td class="card-body">DripCoffeeMachines</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">5</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">1.21e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Computers&Accessories</td>
+      <td class="card-body">Lamps</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">5</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">1.54e-03</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Computers&Accessories</td>
+      <td class="card-body">LaptopSleeves&Slipcases</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">6</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">7.56e-04</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Computers&Accessories</td>
+      <td class="card-body">USBCables</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">110</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">2.74e-08</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Computers&Accessories</td>
+      <td class="card-body">USBHubs</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">5</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">1.03e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Computers&Accessories</td>
+      <td class="card-body">MousePads</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">8</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">1.12e-03</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Computers&Accessories</td>
+      <td class="card-body">WirelessUSBAdapters</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">10</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">1.62e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Computers&Accessories</td>
+      <td class="card-body">GamingKeyboards</td>
+      <td class="card-body"><span style="color:green;">Fallado</span></td>
+      <td class="card-body">No normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Mann-Whitney U</td>
+      <td class="card-body">3.88e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Computers&Accessories</td>
+      <td class="card-body">InkjetInkCartridges</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">4</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">3.83e-06</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Computers&Accessories</td>
+      <td class="card-body">HardDiskBags</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">1.41e-05</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Computers&Accessories</td>
+      <td class="card-body">Printers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">3</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">2.94e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+    <tr>
+      <td class="card-body">Computers&Accessories</td>
+      <td class="card-body">Routers</td>
+      <td class="card-body">Aprobado</td>
+      <td class="card-body">Normal</td>
+      <td class="card-body">9</td>
+      <td class="card-body">No hay diferencia significativa en los precios entre las categorías específicas y otras</td>
+      <td class="card-body">Prueba t si normal, Mann-Whitney U si no normal</td>
+      <td class="card-body">Prueba t</td>
+      <td class="card-body">3.20e-02</td>
+      <td class="card-body"><span style="color:green;">Se rechaza</span></td>
+      <td class="card-body">El p-valor indica la probabilidad de obtener el resultado por azar</td>
+      <td class="card-body">La relación no es por azar</td>
+    </tr>
+  </tbody>
+</table>
+        <script>
+            document.querySelectorAll('.filter-box').forEach(input => {
+                input.addEventListener('input', filterTable);
+            });
+            function filterTable() {
+                let generalCat = document.getElementById('filter-general-cat').value.toLowerCase();
+                let specificCat = document.getElementById('filter-specific-cat').value.toLowerCase();
+                let result = document.getElementById('filter-result').value.toLowerCase();
+                let distribution = document.getElementById('filter-distribution').value.toLowerCase();
+                let rows = document.querySelectorAll('#results-table tbody tr');
+                let count = 0;
+                rows.forEach(row => {
+                    let cells = row.querySelectorAll('td');
+                    let showRow = 
+                        cells[0].textContent.toLowerCase().includes(generalCat) &&
+                        cells[1].textContent.toLowerCase().includes(specificCat) &&
+                        cells[2].textContent.toLowerCase().includes(result) &&
+                        cells[3].textContent.toLowerCase().includes(distribution);
+                    row.style.display = showRow ? '' : 'none';
+                    if (showRow) count++;
+                });
+                document.getElementById('row-count').textContent = 'Total de filas: ' + count;
+            }
+        </script>
+    </body>
+    </html>
+    

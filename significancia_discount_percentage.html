@@ -1,0 +1,161 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            body {
+                background-color: #2e2e2e;
+                color: #ffffff;
+                font-family: Arial, sans-serif;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            th {
+                background-color: #444444;
+            }
+            tr:nth-child(even) {
+                background-color: #333333;
+            }
+            tr:nth-child(odd) {
+                background-color: #2e2e2e;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Resultados de Significancia para Discount Percentage</h1>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Categoría General</th>
+      <th>Distribución Normal</th>
+      <th>Tamaño de Muestra</th>
+      <th>Prueba Recomendada</th>
+      <th>Prueba Realizada</th>
+      <th>P-Valor</th>
+      <th>Resultado</th>
+      <th>Por Qué</th>
+      <th>Hipótesis</th>
+      <th>Resultado Hipótesis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Electronics</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>369</td>
+      <td>Kruskal-Wallis H</td>
+      <td>Kruskal-Wallis H</td>
+      <td>1.008664e-29</td>
+      <td><span style="color:#00FF00">Significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia en el descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`).</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>Se rechaza</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>444</td>
+      <td>Kruskal-Wallis H</td>
+      <td>Kruskal-Wallis H</td>
+      <td>1.008664e-29</td>
+      <td><span style="color:#00FF00">Significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia en el descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`).</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>Se rechaza</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>319</td>
+      <td>Kruskal-Wallis H</td>
+      <td>Kruskal-Wallis H</td>
+      <td>1.008664e-29</td>
+      <td><span style="color:#00FF00">Significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia en el descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`).</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>Se rechaza</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>31</td>
+      <td>Kruskal-Wallis H</td>
+      <td>Kruskal-Wallis H</td>
+      <td>1.008664e-29</td>
+      <td><span style="color:#00FF00">Significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia en el descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`).</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>Se rechaza</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>1</td>
+      <td>Kruskal-Wallis H</td>
+      <td>Kruskal-Wallis H</td>
+      <td>1.008664e-29</td>
+      <td><span style="color:#00FF00">Significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia en el descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`).</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>Se rechaza</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>2</td>
+      <td>Kruskal-Wallis H</td>
+      <td>Kruskal-Wallis H</td>
+      <td>1.008664e-29</td>
+      <td><span style="color:#00FF00">Significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia en el descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`).</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>Se rechaza</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>2</td>
+      <td>Kruskal-Wallis H</td>
+      <td>Kruskal-Wallis H</td>
+      <td>1.008664e-29</td>
+      <td><span style="color:#00FF00">Significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia en el descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`).</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>Se rechaza</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>1</td>
+      <td>Kruskal-Wallis H</td>
+      <td>Kruskal-Wallis H</td>
+      <td>1.008664e-29</td>
+      <td><span style="color:#00FF00">Significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia en el descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`).</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>Se rechaza</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>1</td>
+      <td>Kruskal-Wallis H</td>
+      <td>Kruskal-Wallis H</td>
+      <td>1.008664e-29</td>
+      <td><span style="color:#00FF00">Significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia en el descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`).</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>Se rechaza</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    
