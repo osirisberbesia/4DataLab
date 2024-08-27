@@ -399,34 +399,40 @@ Hicimos cohorte de rating, de actual_price y discount_percentage
 
 ## Prueba de Significancia
 
-
+[Visualizar significancia](https://significancia.tiiny.site/)
 
 ## Regresión Lineal
 
+Para este analisis se convirtio a variable numerica, las variables categoricas Rating Segmentation y General Category. Se hizo este analisis para las combinaciones:
+* rating_count_complete y segmentation_rating_num
+* rating y general_category_num
+* rating y image_count
+* rating y discount_percentage
+* general_category_num y discount_percentage
+
+![image](https://github.com/user-attachments/assets/ab28016a-ed8e-486a-b8f4-23fbbcf81c44)
+
+![image](https://github.com/user-attachments/assets/7d535447-68b9-4886-84c2-73b1b57843e4)
+
+
 ## Regresión Logística
 
-# Resumen de Información en un Dashboard o Reporte
+Se hizo este analisis de probabilidad para las variables:
 
-## Representar Datos a Través de Tabla Resumen o Scorecards
+* Discount_percentage
+* Actual_price
 
-## Representar Datos a Través de Gráficos Simples
+![image](https://github.com/user-attachments/assets/f44dfaca-b59f-4999-bcd5-8eaf074a1440)
 
-## Representar Datos a Través de Gráficos o Visuales Avanzados
+![image](https://github.com/user-attachments/assets/576232ac-83ba-43b0-8e41-e58f666e167e)
 
-## Aplicar Opciones de Filtros para Manejo e Interacción
 
 # Presentación de Resultados
 
-## Seleccionar Gráficos y Información Relevante
+## Hallazgos
 
-## Crear una Presentación
+## Conclusiones
 
-## Presentar Resultados con Conclusiones y Recomendaciones
+## Recomendaciones
 
-# Hallazgos
-
-# Conclusiones
-
-# Recomendaciones
-
-# Enlaces de interes
+## Enlaces de interes
