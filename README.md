@@ -164,17 +164,17 @@ No se tuvieron en cuenta en la unión de las tablas ya que pueden llegar a sesga
 
 ### Resumen de limpieza de datos 
 
-> Despues de realizar la limpieza de datos, en donde se identificaron y manejaron datos nulos, duplicados, discrepantes y atipicos (outliers), se unieron las tablas con el nombre "amazon_unificado".
+> Después de realizar la limpieza de datos, en donde se identificaron y manejaron datos nulos, duplicados, discrepantes y atípicos (outliers), se unieron las tablas con el nombre "amazon_unificado".
 
 ## Análisis exploratorio
 
-Para este análisis se exploraron la visualizaron de las hipotesis planteadas al inicio del proyecto.
+Para este análisis se exploraron la visualizaron de las hipótesis planteadas al inicio del proyecto.
 
 1. **Los usuarios confían más en las calificaciones que son más altas, en comparación a las calificaciones bajas.:** confiabilidad con el conteo de votos, y la categorización del rating (alto, bajo).
 
 ![image](https://github.com/user-attachments/assets/9b66698f-546c-4025-98ad-66182f91bef7)
 
-> Esta hipotesis es verdadera, se puede obervar en el grafico que en los productos con un rating clasificado como Alto, tienen mas votos que en el de Bajo
+> Esta hipótesis es verdadera, se puede observar en el gráfico que en los productos con un rating clasificado como Alto, tienen mas votos que en el de Bajo
 
 ![image](https://github.com/user-attachments/assets/252dfeda-ea32-4608-a095-d40d19affa24)
 
