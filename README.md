@@ -160,7 +160,7 @@ Boxplot de discounted_percentage
 
 ### Accionables para outliers
 
-No se tuvieron en cuenta en la unión de las tablas ya que pueden llegar a sesgar los resultados, por sus datos extremos.
+Al identificar los outliers, se eliminaron desde este punto, ya que al conservarlos pueden llegar a sesgar los resultados, por sus datos extremos.
 
 ### Resumen de limpieza de datos 
 
