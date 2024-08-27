@@ -1,3 +1,4 @@
+=======
 # Proyecto 4 - DataLab
 ## Amazon Sales
 
@@ -104,114 +105,24 @@ Para los datos duplicados también se hizo un análisis del concatenado de toda 
 
 Usando [esta](SQL\duplicados_product_conteovalidacion.sql) query.
 
-Dando como resultado, que tenemos 16 datos que atender. Sin embargo, se decide dejar estos datos a pesar de estar duplicados, porque no tenemos la foto para corroborar si cambia en color o estilo, a pesar de tener las mismas características. E igualmente no tenemos información de si es el mismo vendedor quien lo publica.
-
-Quedan 1351 datos posterior a la limpieza de duplicados.
+Dando como resultado, que tenemos 16 datos que atender. Sin embargo, se decide dejar estos datos a pesar de estar duplicados, porque no tenemos la foto para corroborar si cambia en color o estilo, a pesar de tener las mismas características.
 
 
-# Creación de nuevas variables
+###
 
-| Variable origen |Variable creada | Significado | 
-|--|--|--|
-| review_id |  reviews_count| Separa los valores de los ID en forma de Array, los cuales están separados uno de los otros por comas en la variable origen, para cuantificar cuantos reviews se registraron en ese producto |
-| category | general_category | Se eligió la primera categoría de la descripción de categorías en la que se encuentra el producto. |
-| category | specific_category | Dado que la descripción de categorías va desde la más general a la más específica, se tomó en cuenta la última categoría en la que se encuentra el producto para crear la variable 'specific_category'.|
-|discounted_percentage | category_discount | Separa el porcentaje de descuento en 4 grupos, leve (< 0.31), moderado (entre 0.31 y 0.49), intermedio (entre 0.49 y 0.62), significativo ( mayores a 0.62) |
-| rating | category_rating | Se categorizaron los rating 1, 2, 3 como 'Bajo', y 4 , 5 de rating como 'Alto'|
-|rating_count | category_rating_count | Segmentación del conteo de rating por cuartiles, las categorias son, Poco confiable (menores a 932), Medio confiable ( entre 932 y 3714), Moderadamente confiable (entre 3714 y 13156), Confiable (Mayores a 13156) |
-| review_content | image_count | Conteo de link de imagenes dentro del contenido de review |
-| category_rating y category_rating_count | rating_segmentation| Concatenacion de las variables creadas category_rating y category_rating_count, un ejemplo de retorno es 'Alto (Poco confiable)' |
-
-# Cambio de tipo de dato
-
-Para la variable 'rating' se cambio de STRING a FLOAT64, con la función CAST
-
-# Identificar y manejar datos discrepantes
-
-En la variable 'rating' se encontro un dato con el simbolo '|', este campo se reemplazo con el numero 0
-
-# Manejo de outliers para tabla amazon_review
-
-Boxplot de variable reviews_content (Variable que me cuenta los review_id)
-
-![image](https://github.com/user-attachments/assets/4ccce97e-899d-4062-a8ac-e43395451669)
-
-Boxplot de variable rating (Variable con su calificación)
-
-![rating box](https://github.com/user-attachments/assets/76be8013-ae64-41d1-9cf8-6410af8ec2f9)
-
-Boxplot de variable rating_count (conteo de personas que votaron por su calificación)
-
-![rating_count boxplot](https://github.com/user-attachments/assets/66d62105-cf05-4875-9b7d-a47d1cfbffa7)
-
-# Manejo de outliers para tabla amazon_product
-
-Boxplot de variable discounted_price
-
-![discounted_price box](https://github.com/user-attachments/assets/e997ce96-3c15-4ede-a43c-2e416b23ce4a)
-
-Boxplot actual_price
-
-![actual_price boxplot](https://github.com/user-attachments/assets/4a8b0226-b959-4b1a-830a-d34ff239716a)
-
-Boxplot de discounted_percentage
-
-![discounted_percentage boxplot](https://github.com/user-attachments/assets/0cfc352a-9ec9-4c81-a505-6406801c5c56)
-
-### Accionables para outliers
-
-No se tuvieron en cuenta en la unión de las tablas ya que pueden llegar a sesgar los resultados, por sus datos extremos.
-
-### Resumen de limpieza de datos 
-
-> Después de realizar la limpieza de datos, en donde se identificaron y manejaron datos nulos, duplicados, discrepantes y atípicos (outliers), se unieron las tablas con el nombre "amazon_unificado".
-
-## Análisis exploratorio
-
-Para este análisis se exploraron la visualizaron de las hipótesis planteadas al inicio del proyecto.
-
-1. **Los usuarios confían más en las calificaciones que son más altas, en comparación a las calificaciones bajas.:** confiabilidad con el conteo de votos, y la categorización del rating (alto, bajo).
-
-![image](https://github.com/user-attachments/assets/9b66698f-546c-4025-98ad-66182f91bef7)
-
-> Esta hipótesis es verdadera, se puede observar en el gráfico que en los productos con un rating clasificado como Alto, tienen mas votos que en el de Bajo
-
-![image](https://github.com/user-attachments/assets/252dfeda-ea32-4608-a095-d40d19affa24)
-
-> Se exploró la correlación entre las variables rating y rating_count, obteniendo un resultado de 0.09. Esto indica que existe una correlación positiva muy débil entre ellas, lo que sugiere que no se afectan significativamente entre sí.
-
-2. **Calificación promedio por categoría:** Diferencias significativas en la calificación promedio entre productos de distintas categorías.
-
-![image](https://github.com/user-attachments/assets/5e372943-e4b6-4b64-ac75-94650de6f923)
-
-> Esta hipotesis es falsa, no hay diferencias significativas entre los promedios de las categorias generales.
-
-3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas que aquellos con reseñas solo textuales.
-
-![image](https://github.com/user-attachments/assets/f5c3ace1-770d-4b14-b68f-d3427c45c799)
-
-> Esta hipotesis es verdadera, en las calificaciones altas hay mas imagenes en su review_content
-
-4. **Relación entre descuento y puntuación:** A mayor descuento, mejor será la calificación del producto.
-
-Grafica 1
-
-![image](https://github.com/user-attachments/assets/970adb30-c5a2-4dfa-ad97-e30988a2c22a)
+* [Reviews duplicadas (conteo)](SQL\duplicados_review_conteo.sql)
 
 
-> Esta hipotesis es negativa, no tienen relación el porcentaje de descuento con su puntuación, esto se pudo validar a través del test de pearson con un resultado de -0.017, y en las graficas de Tableau.
-
-
-5. **Descuento por categoría:** Variaciones significativas en los porcentajes de descuento entre productos de diferentes categorías.
-
-![image](https://github.com/user-attachments/assets/100a28ba-e010-4422-86be-323a1cc9c88a)
-
-> Esta hipotesis es verdadera, si hay diferencias significativas entre los porcentajes de descuento entre productos de diferentes categorías. La diferencia mas grande es entre Home Improvement y Office Products. Un hallazgo es que la categoría de Toys&Games no tienen descuento
-
-
-
-
-
-
-
-
+#### Duplicados
+| Variable | Nulos| Acción |
+|-|-|-|
+| user_id |  271 | Ninguna acción. Esta variable puede tener duplicados |
+| user_name |  271 | Ninguna acción. Esta variable puede tener duplicados |
+| review_id |  271 |
+| review_title |  271 | Ninguna acción. Esta variable puede tener duplicados |
+| review_content | 253 | Ninguna acción. Esta variable puede tener duplicados |
+| img_link |  514 | Ninguna acción. Esta variable puede tener duplicados |
+| product_link |  465 | Ninguna acción. Esta variable puede tener duplicados |
+| product_id |  114 | Ninguna acción. Esta variable puede tener duplicados |
+| rating |  1439 | Ninguna acción. Esta variable puede tener duplicados |
+| rating_count |  321 | Ninguna acción. Esta variable puede tener duplicados |
