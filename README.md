@@ -107,6 +107,21 @@
 
 ### Nulos
 
+=======
+
+1. **Los usuarios confían más en las calificaciones que son más altas, en comparación a las calificaciones bajas.:** confiabilidad con el conteo de votos, y la categorización del rating (alto, bajo).
+2. **Calificación promedio por categoría:** Diferencias significativas en la calificación promedio entre productos de distintas categorías.
+3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas que aquellos con reseñas solo textuales.
+4. **Relación entre descuento y puntuación:** A mayor descuento, mejor será la calificación del producto.
+5. **Descuento por categoría:** Variaciones significativas en los porcentajes de descuento entre productos de diferentes categorías.
+
+
+# Conjunto de datos a analizar
+
+## Datos de Amazon Reviews.
+
+### Nulos
+
 * Consulta para la data: [Reviews](SQL\nulos_indentificar_review.sql)
 
 
@@ -296,7 +311,6 @@ Grafica 1
 ![image](https://github.com/user-attachments/assets/100a28ba-e010-4422-86be-323a1cc9c88a)
 
 > Esta hipotesis es verdadera, si hay diferencias significativas entre los porcentajes de descuento entre productos de diferentes categorías. La diferencia mas grande es entre Home Improvement y Office Products. Un hallazgo es que la categoria de Toys&Games no tienen descuento
-
 
 
 
