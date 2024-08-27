@@ -206,7 +206,7 @@ Grafica 1
 
 ![image](https://github.com/user-attachments/assets/100a28ba-e010-4422-86be-323a1cc9c88a)
 
-> Esta hipotesis es verdadera, si hay diferencias significativas entre los porcentajes de descuento entre productos de diferentes categorías. La diferencia mas grande es entre Home Improvement y Office Products. Un hallazgo es que la categoria de Toys&Games no tienen descuento
+> Esta hipotesis es verdadera, si hay diferencias significativas entre los porcentajes de descuento entre productos de diferentes categorías. La diferencia mas grande es entre Home Improvement y Office Products. Un hallazgo es que la categoría de Toys&Games no tienen descuento
 
 
 
