@@ -429,10 +429,56 @@ Se hizo este analisis de probabilidad para las variables:
 
 # Presentación de Resultados
 
+
 ## Hallazgos
 
-## Conclusiones
+1. **Toys & Games sin descuentos:** La categoría "Toys & Games" no presentó descuentos, lo que puede indicar una estrategia de precios distinta o un mercado con poca competencia en precios.
+
+2. **Mayor descuento en Home Improvement:** La categoría "Home Improvement" mostró los mayores porcentajes de descuento, lo que sugiere una competencia más agresiva o una alta sensibilidad al precio en esta categoría.
+
+3. **Baja correlación entre rating y rating_count:** La correlación de 0.09 entre las variables de calificación y el conteo de votos revela que los usuarios pueden estar votando independientemente de la calificación, lo que podría indicar que el conteo de votos no es un buen predictor de la calidad percibida.
+
+4. **Revisión de productos con imágenes:** Las reseñas sin imágenes tienden a ser mejor valoradas, lo que subraya la irrelevancia de incluir imágenes en las reseñas para mejorar la percepción del producto.
+
+5. **La mayoria de productos son calificados con un rating alto:** Lo que sugiere que los clientes estan obteniendo lo que esperan del producto.
+
+6. **La categoria Car&Motorbikes es la que tiene el promedio de rating mas bajo:** No se espera rating alto, suponemos que es debido a que es un producto que se adquiere de manera presencialmente.
 
 ## Recomendaciones
 
+1. **Fomentar reseñas con imágenes:** Incentivar a los usuarios a incluir imágenes en sus reseñas, ya que esto puede mejorar la percepción y calificación del producto.
+
+2. **Estrategias de descuento dirigidas:** Continuar explorando y aplicando estrategias de descuento específicas para categorías como "Home Improvement", donde parece haber una alta sensibilidad al precio.
+
+3. **Análisis de mercado para Toys & Games:** Investigar más a fondo la categoría "Toys & Games" para entender por qué no se aplican descuentos y si esta estrategia es la más efectiva en términos de ventas y percepción del valor.
+
+4. **Mejorar la relación entre votos y calificación:** Investigar cómo mejorar la relación entre el número de votos y la calificación, tal vez mediante el uso de incentivos para motivar a los usuarios a calificar los productos.
+
+5. **Monitorear y ajustar la estrategia de calificación:** Implementar un seguimiento continuo de las calificaciones y los votos recibidos para identificar patrones y ajustar estrategias de marketing y ventas en consecuencia.
+
+6. **Cantidad de unidades en inventario:** Se recomienda incorporar la variable de unidades por producto y la cantidad de unidades vendidas para llevar un control más detallado y realizar un seguimiento efectivo de la popularidad de los productos en términos de ventas. Además, se observa que cada producto cuenta con 8 calificaciones, pero no se dispone de datos adicionales que permitan realizar comparaciones significativas. Incluir estas variables proporcionaría una visión más completa del rendimiento de cada producto y facilitaría un análisis más profundo de su éxito en el mercado.
+
+## Conclusiones
+
+1. **Confiabilidad en calificaciones altas:** Se confirma que los usuarios tienden a confiar más en las calificaciones altas, lo cual se refleja en un mayor número de votos para productos con una calificación clasificada como "Alta".
+   
+2. **Diferencias entre categorías:** No existen diferencias significativas en las calificaciones promedio entre productos de distintas categorías generales, lo que sugiere que la categoría no influye mucho en la percepción del usuario sobre la calidad del producto.
+
+3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas, validando la importancia de la representación visual en la percepción del producto.
+
+4. **Relación entre descuento y calificación:** No se encontró una correlación significativa entre el porcentaje de descuento y la calificación del producto, lo que sugiere que los usuarios no asocian necesariamente un descuento con una mayor calidad o satisfacción.
+
+5. **Descuento por categoría:** Hay variaciones significativas en los porcentajes de descuento entre diferentes categorías de productos, lo cual puede reflejar estrategias de precios diferenciadas según el tipo de producto.
+
+6. **Outliers excluidos para evitar sesgos:** Los datos atípicos (outliers) fueron excluidos del análisis final, lo que ayudó a evitar sesgos en los resultados y a asegurar una mayor precisión en las conclusiones obtenidas.
+
+7. **Calificaciones y número de votos:** La correlación débil entre la calificación y el número de votos sugiere que estos factores no se afectan significativamente entre sí, indicando que otros elementos podrían estar influyendo en la cantidad de votos que recibe un producto.
+
+
 ## Enlaces de interes
+
+| Analista | Video Loom | Dashboard | Exploratorio en Python | Presentación |
+|----------|------------|-----------|------------------------|--------------|
+| Osiris Berbesia | Enlace 1  | Enlace 2  | Enlace 3               | Enlace 4     |
+| Karen Fonseca | Enlace 5  | Enlace 6  | Enlace 7               | Enlace 8     |
+
