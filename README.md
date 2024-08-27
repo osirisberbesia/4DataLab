@@ -464,7 +464,7 @@ Se hizo este analisis de probabilidad para las variables:
    
 2. **Diferencias entre categorías:** No existen diferencias significativas en las calificaciones promedio entre productos de distintas categorías generales, lo que sugiere que la categoría no influye mucho en la percepción del usuario sobre la calidad del producto.
 
-3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas, validando la importancia de la representación visual en la percepción del producto.
+3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más bajas, invalidando la importancia de la representación visual en la percepción del producto.
 
 4. **Relación entre descuento y calificación:** No se encontró una correlación significativa entre el porcentaje de descuento y la calificación del producto, lo que sugiere que los usuarios no asocian necesariamente un descuento con una mayor calidad o satisfacción.
 
