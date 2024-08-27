@@ -13,6 +13,108 @@
 4. **Relación entre descuento y puntuación:** A mayor descuento, mejor será la calificación del producto.
 5. **Descuento por categoría:** Variaciones significativas en los porcentajes de descuento entre productos de diferentes categorías.
 
+---
+# Procesamiento y Preparación de la Base de Datos
+
+## Conectar/Importar Datos a Herramientas
+
+## Identificar y Manejar Valores Nulos
+
+## Identificar y Manejar Valores Duplicados
+
+## Identificar y Manejar Datos Fuera del Alcance del Análisis
+
+## Identificar y Manejar Datos Discrepantes en Variables Categóricas
+
+## Identificar y Manejar Datos Discrepantes en Variables Numéricas
+
+## Comprobar y Cambiar Tipo de Dato
+
+## Crear Nuevas Variables
+
+## Unir Tablas
+
+## Construir Tablas Auxiliares
+
+# Análisis Exploratorio
+
+## Agrupar Datos Según Variables Categóricas
+
+## Visualizar las Variables Categóricas
+
+## Aplicar Medidas de Tendencia Central
+
+## Visualizar Distribución
+
+## Aplicar Medidas de Dispersión
+
+## Analizar el Comportamiento de los Datos a lo Largo del Tiempo
+
+## Calcular Cuartiles, Deciles o Percentiles
+
+## Calcular Correlación Entre Variables
+
+# Aplicación de Técnicas de Análisis
+
+## Aplicar Segmentación
+
+## Validar Hipótesis 
+
+## Calcular Riesgo Relativo
+
+## Aplicar Análisis por Cohorte
+
+## Prueba de Significancia
+
+## Regresión Lineal
+
+## Regresión Logística
+
+# Resumen de Información en un Dashboard o Reporte
+
+## Representar Datos a Través de Tabla Resumen o Scorecards
+
+## Representar Datos a Través de Gráficos Simples
+
+## Representar Datos a Través de Gráficos o Visuales Avanzados
+
+## Aplicar Opciones de Filtros para Manejo e Interacción
+
+# Presentación de Resultados
+
+## Seleccionar Gráficos y Información Relevante
+
+## Crear una Presentación
+
+## Presentar Resultados con Conclusiones y Recomendaciones
+
+# Hallazgos
+
+# Conclusiones
+
+# Recomendaciones
+
+# Enlaces de interes
+
+
+----
+
+
+
+# Conjunto de datos a analizar
+
+## Datos de Amazon Reviews.
+
+### Nulos
+
+=======
+
+1. **Los usuarios confían más en las calificaciones que son más altas, en comparación a las calificaciones bajas.:** confiabilidad con el conteo de votos, y la categorización del rating (alto, bajo).
+2. **Calificación promedio por categoría:** Diferencias significativas en la calificación promedio entre productos de distintas categorías.
+3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas que aquellos con reseñas solo textuales.
+4. **Relación entre descuento y puntuación:** A mayor descuento, mejor será la calificación del producto.
+5. **Descuento por categoría:** Variaciones significativas en los porcentajes de descuento entre productos de diferentes categorías.
+
 
 # Conjunto de datos a analizar
 
@@ -209,8 +311,6 @@ Grafica 1
 ![image](https://github.com/user-attachments/assets/100a28ba-e010-4422-86be-323a1cc9c88a)
 
 > Esta hipotesis es verdadera, si hay diferencias significativas entre los porcentajes de descuento entre productos de diferentes categorías. La diferencia mas grande es entre Home Improvement y Office Products. Un hallazgo es que la categoria de Toys&Games no tienen descuento
-
-
 
 
 
