@@ -233,9 +233,6 @@ FROM
 
 Correlación de rating y discount percentage: 0.17
 
-# Aplicación de Técnicas de Análisis
-
-## Aplicar Segmentación
 
 ## Validar Hipótesis 
 
@@ -282,9 +279,127 @@ Grafica 1
 
 ## Calcular Riesgo Relativo
 
+```sql
+WITH quartiles AS (
+    SELECT
+        NTILE(4) OVER (ORDER BY actual_price) AS cuartil_price,
+        category_rating
+    FROM 
+        `datalab-431915.Amazon_sales.amazon_unificado`
+),
+cuartiles_counts AS (
+    SELECT
+        cuartil_price,
+        COUNT(CASE WHEN category_rating = 'Bajo' THEN 1 END) AS count_bajo,
+        COUNT(CASE WHEN category_rating = 'Alto' THEN 1 END) AS count_alto
+    FROM
+        quartiles
+    GROUP BY
+        cuartil_price
+),
+cuartiles_sums AS (
+    SELECT
+        cuartil_price,
+        count_bajo,
+        count_alto,
+        (count_bajo + count_alto) AS total_count
+    FROM
+        cuartiles_counts
+),
+cuartiles_total_sums AS (
+    SELECT
+        SUM(CASE WHEN cuartil_price = 1 THEN count_bajo ELSE 0 END) AS suma_cuartil_1_bajo,
+        SUM(CASE WHEN cuartil_price = 1 THEN total_count ELSE 0 END) AS suma_cuartil_1_total,
+        SUM(CASE WHEN cuartil_price = 2 THEN count_bajo ELSE 0 END) AS suma_cuartil_2_bajo,
+        SUM(CASE WHEN cuartil_price = 2 THEN total_count ELSE 0 END) AS suma_cuartil_2_total,
+        SUM(CASE WHEN cuartil_price = 3 THEN count_bajo ELSE 0 END) AS suma_cuartil_3_bajo,
+        SUM(CASE WHEN cuartil_price = 3 THEN total_count ELSE 0 END) AS suma_cuartil_3_total,
+        SUM(CASE WHEN cuartil_price IN (1, 3, 4) THEN count_bajo ELSE 0 END) AS suma_cuartiles_1_3_4_bajo,
+        SUM(CASE WHEN cuartil_price IN (1, 3, 4) THEN total_count ELSE 0 END) AS suma_cuartiles_1_3_4_total,
+        SUM(CASE WHEN cuartil_price IN (2, 3, 4) THEN count_bajo ELSE 0 END) AS suma_cuartiles_2_3_4_bajo,
+        SUM(CASE WHEN cuartil_price IN (2, 3, 4) THEN total_count ELSE 0 END) AS suma_cuartiles_2_3_4_total,
+        SUM(CASE WHEN cuartil_price IN (1, 2, 4) THEN count_bajo ELSE 0 END) AS suma_cuartiles_1_2_4_bajo,
+        SUM(CASE WHEN cuartil_price IN (1, 2, 4) THEN total_count ELSE 0 END) AS suma_cuartiles_1_2_4_total,
+        SUM(CASE WHEN cuartil_price IN (1, 2, 3) THEN count_bajo ELSE 0 END) AS suma_cuartiles_1_2_3_bajo,
+        SUM(CASE WHEN cuartil_price IN (1, 2, 3) THEN total_count ELSE 0 END) AS suma_cuartiles_1_2_3_total
+    FROM
+        cuartiles_sums
+)
+
+-- Resultados por cuartil con cálculos adicionales
+SELECT
+    CASE 
+        WHEN cuartil_price = 1 THEN 'Cuartil 1'
+        WHEN cuartil_price = 2 THEN 'Cuartil 2'
+        WHEN cuartil_price = 3 THEN 'Cuartil 3'
+        WHEN cuartil_price = 4 THEN 'Cuartil 4'
+    END AS cuartil_group,
+    count_bajo,
+    count_alto,
+    total_count,
+    CASE
+        WHEN cuartil_price = 1 THEN
+            (count_bajo / NULLIF(total_count, 0)) /
+            NULLIF(
+                (SELECT suma_cuartiles_2_3_4_bajo / NULLIF(suma_cuartiles_2_3_4_total, 0) FROM cuartiles_total_sums),
+                0
+            )
+        WHEN cuartil_price = 2 THEN
+            (count_bajo / NULLIF(total_count, 0)) /
+            NULLIF(
+                (SELECT suma_cuartiles_1_3_4_bajo / NULLIF(suma_cuartiles_1_3_4_total, 0) FROM cuartiles_total_sums),
+                0
+            )
+        WHEN cuartil_price = 3 THEN
+            (count_bajo / NULLIF(total_count, 0)) /
+            NULLIF(
+                (SELECT suma_cuartiles_1_2_4_bajo / NULLIF(suma_cuartiles_1_2_4_total, 0) FROM cuartiles_total_sums),
+                0
+            )
+        WHEN cuartil_price = 4 THEN
+            (count_bajo / NULLIF(total_count, 0)) /
+            NULLIF(
+                (SELECT suma_cuartiles_1_2_3_bajo / NULLIF(suma_cuartiles_1_2_3_total, 0) FROM cuartiles_total_sums),
+                0
+            )
+        ELSE
+            NULL
+    END AS riesgo_relativo
+FROM
+    cuartiles_sums
+JOIN
+    cuartiles_total_sums
+ON
+    TRUE
+ORDER BY
+    cuartil_price;
+
+```
+> Se calculo el riesgo relativo de que fuera un rating alto o bajo de las siguientes variables:
+
+* Actual_price
+* Discount_percentage
+
+
 ## Aplicar Análisis por Cohorte
 
+Hicimos cohorte de rating, de actual_price y discount_percentage
+
+
+![image](https://github.com/user-attachments/assets/648bb4f3-ef82-47b6-8570-3f208b3566a5)
+
+![image](https://github.com/user-attachments/assets/144be70a-b3e0-4f76-9de7-3217eb3712a0)
+
+![image](https://github.com/user-attachments/assets/e7e57d48-7be3-48d5-831c-46be0ada5c33)
+
+![image](https://github.com/user-attachments/assets/e2a0f4b2-a37b-4614-9432-4dd8cdc276a5)
+
+![image](https://github.com/user-attachments/assets/4a9b84de-d52f-4984-89b6-cc3b3b4c0557)
+
+
 ## Prueba de Significancia
+
+
 
 ## Regresión Lineal
 
