@@ -15,7 +15,20 @@
 
 # Procesamiento y Preparación de la Base de Datos
 
+En esta primera etapa, se importarán y limpiarán los datos para asegurar su calidad, abordando valores nulos, duplicados y outliers. Se corregirán discrepancias en variables categóricas y numéricas, transformarán tipos de datos y crearán nuevas variables relevantes. 
+
+Esta base de datos, que incluye variables numéricas y de texto sobre reseñas en Amazon, se consolidará para facilitar el análisis exploratorio enfocado en los ratings y la cantidad de reseñas disponibles.
+
 ## Conectar/Importar Datos a Herramientas
+
+Desde los dataset .csv, llamados amazon_product y amazon_reviews, para trabajarlos se utilizó:
+
+* BigQuery/PostgreSQL 
+* Google Colab
+* Tableau
+
+Lo anterior con el fin de importar y conectar los datos. 
+
 
 ## Identificar y Manejar Valores Nulos
 
@@ -166,7 +179,6 @@ Para la variable 'rating' se cambio de STRING a FLOAT64, con la función CAST
 
 > Despues de realizar la limpieza de datos, en donde se identificaron y manejaron datos nulos, duplicados, discrepantes y atipicos (outliers), se unieron las tablas con el nombre "amazon_unificado".
 
-## Construir Tablas Auxiliares
 
 # Análisis Exploratorio
 
@@ -174,19 +186,52 @@ Para este análisis se exploraron la visualizaron de las hipotesis planteadas al
 
 ## Agrupar Datos Según Variables Categóricas
 
+Se crearon nuevas variables categoricas que agrupan datos según confiabilidad (Rating Segmentation), según nivel de descuento (Category Discount), y según nivel de calificación (Category Rating).
+
 ## Visualizar las Variables Categóricas
+
+![image](https://github.com/user-attachments/assets/56a34027-cdf4-4e74-9fd0-4c725b279d34)
+
+![image](https://github.com/user-attachments/assets/329fcf85-1297-4a99-b5d8-b0eaeb82fcb8)
+
+![image](https://github.com/user-attachments/assets/af1c9cac-3851-4a9b-b821-8dce2d8d3a4a)
 
 ## Aplicar Medidas de Tendencia Central
 
+![image](https://github.com/user-attachments/assets/bf25544c-b55b-423c-8d80-977dd3605797)
+
+![image](https://github.com/user-attachments/assets/1c9da602-b5eb-4b3c-929b-e7ccf09d49b6)
+
+
 ## Visualizar Distribución
 
-## Aplicar Medidas de Dispersión
+![image](https://github.com/user-attachments/assets/a9f9e741-50ec-4855-b78a-64ca895826c4)
 
-## Analizar el Comportamiento de los Datos a lo Largo del Tiempo
 
 ## Calcular Cuartiles, Deciles o Percentiles
 
+![image](https://github.com/user-attachments/assets/995706ed-5d16-4828-8af3-56a7124437fe)
+
+| Descripción          | Valor               |
+|----------------------|---------------------|
+| Cuartil 1            | Menor a 946.25      |
+| Cuartil 2            | Menor a 3762.5      |
+| Cuartil 3            | Menor a 13249.0     |
+| Cuartil 4            | Mayores de 13249.0 |
+| Valor Máximo         | 426973              |
+| Valor Mínimo         | 0                   |
+| Desviación Estándar  | 32784.90            |
+
 ## Calcular Correlación Entre Variables
+
+```sql
+SELECT
+    CORR(CAST(rating AS FLOAT8), CAST(discount_percentage AS FLOAT8)) AS correlation
+FROM
+    amazon_unificado
+```
+
+Correlación de rating y discount percentage: 0.17
 
 # Aplicación de Técnicas de Análisis
 
