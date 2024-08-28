@@ -3,7 +3,7 @@
 WITH ProductIDDuplicates AS (
     SELECT
         "product_id",
-        COUNT(*) - 1 AS duplicate_count
+        COUNT(*) -1 AS duplicate_count
     FROM
         tabla_amazon_product
     GROUP BY
