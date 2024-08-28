@@ -458,27 +458,32 @@ Se hizo este analisis de probabilidad para las variables:
 
 6. **Cantidad de unidades en inventario:** Se recomienda incorporar la variable de unidades por producto y la cantidad de unidades vendidas para llevar un control más detallado y realizar un seguimiento efectivo de la popularidad de los productos en términos de ventas. Además, se observa que cada producto cuenta con 8 calificaciones, pero no se dispone de datos adicionales que permitan realizar comparaciones significativas. Incluir estas variables proporcionaría una visión más completa del rendimiento de cada producto y facilitaría un análisis más profundo de su éxito en el mercado.
 
+
 ## Conclusiones
 
-1. **Confiabilidad en calificaciones altas:** Se confirma que los usuarios tienden a confiar más en las calificaciones altas, lo cual se refleja en un mayor número de votos para productos con una calificación clasificada como "Alta".
-   
-2. **Diferencias entre categorías:** No existen diferencias significativas en las calificaciones promedio entre productos de distintas categorías generales, lo que sugiere que la categoría no influye mucho en la percepción del usuario sobre la calidad del producto.
+1. **Confiabilidad en calificaciones altas:** Los usuarios tienden a confiar más en las calificaciones altas, lo que se refleja en un mayor número de votos para productos con una calificación clasificada como "Alta".
 
-3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más bajas, invalidando la importancia de la representación visual en la percepción del producto.
+2. **Diferencias entre categorías:** No se encontraron diferencias significativas en las calificaciones promedio entre productos de distintas categorías generales, lo que sugiere que la categoría no influye considerablemente en la percepción del usuario sobre la calidad del producto.
 
-4. **Relación entre descuento y calificación:** No se encontró una correlación significativa entre el porcentaje de descuento y la calificación del producto, lo que sugiere que los usuarios no asocian necesariamente un descuento con una mayor calidad o satisfacción.
+3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más bajas, lo que cuestiona la importancia de la representación visual en la percepción del producto.
 
-5. **Descuento por categoría:** Hay variaciones significativas en los porcentajes de descuento entre diferentes categorías de productos, lo cual puede reflejar estrategias de precios diferenciadas según el tipo de producto.
+4. **Relación entre descuento y calificación:** No se identificó una correlación significativa entre el porcentaje de descuento y la calificación del producto, lo que indica que los usuarios no asocian necesariamente un descuento con una mayor calidad o satisfacción.
 
-6. **Outliers excluidos para evitar sesgos:** Los datos atípicos (outliers) fueron excluidos del análisis final, lo que ayudó a evitar sesgos en los resultados y a asegurar una mayor precisión en las conclusiones obtenidas.
+5. **Descuento por categoría:** Se observaron variaciones significativas en los porcentajes de descuento entre diferentes categorías de productos, lo que podría reflejar estrategias de precios diferenciadas según el tipo de producto.
 
-7. **Calificaciones y número de votos:** La correlación débil entre la calificación y el número de votos sugiere que estos factores no se afectan significativamente entre sí, indicando que otros elementos podrían estar influyendo en la cantidad de votos que recibe un producto.
+6. **Outliers excluidos para evitar sesgos:** Los datos atípicos (outliers) fueron excluidos del análisis final, lo que contribuyó a evitar sesgos en los resultados y a asegurar una mayor precisión en las conclusiones.
+
+7. **Calificaciones y número de votos:** La débil correlación entre la calificación y el número de votos sugiere que estos factores no se afectan significativamente entre sí, lo que indica que otros elementos podrían estar influyendo en la cantidad de votos que recibe un producto.
+
+8. **Relación entre descuento y probabilidad de rating bajo:** El análisis de riesgo relativo y la regresión logística muestran que un mayor descuento en los productos tiende a asociarse con una mayor probabilidad de obtener una calificación baja.
+
+9. **Relación entre precio y calificación:** Se observa que los productos con precios más altos tienden a recibir mejores calificaciones, lo que indica una preferencia por parte de los usuarios hacia productos más costosos.
 
 
 ## Enlaces de interes
 
 | Analista | Video Loom | Dashboard | Exploratorio en Python | Presentación |
 |----------|------------|-----------|------------------------|--------------|
-| Osiris Berbesia | Enlace 1  | Enlace 2  | Enlace 3               | Enlace 4     |
-| Karen Fonseca | Enlace 5  | Enlace 6  | Enlace 7               | Enlace 8     |
+| Osiris Berbesia | Enlace 1  | [Dashboard](https://public.tableau.com/app/profile/osiris.berbesia/viz/DashboardAmazonIndia/Dashboard1?publish=yes)  | Enlace 3               | Enlace 4     |
+| Karen Fonseca | Enlace 5  | [Dashboard](https://public.tableau.com/app/profile/karen.fonseca6131/viz/Datalab_17247833763220/Dashboard1?publish=yes)  | Enlace 7               | Enlace 8     |
 
