@@ -33,7 +33,7 @@ Lo anterior con el fin de importar y conectar los datos.
 ## Identificar y Manejar Valores Nulos
 
 ### Nulos para tabla de productos
-* Consulta para la data: [Productos](SQL\nulos_indentificar_products.sql)
+* Consulta para la data: [Productos](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/nulos_indentificar_products.sql)
 
 
 | Variable | Nulos| Acción |
@@ -49,7 +49,7 @@ Lo anterior con el fin de importar y conectar los datos.
 
 ### Nulos para tabla de reviews
 
-* Consulta para la data: [Reviews](SQL\nulos_indentificar_review.sql)
+* Consulta para la data: [Reviews](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/nulos_indentificar_review.sql)
 
 
 | Variable | Nulos | Acción |
@@ -71,7 +71,7 @@ Lo anterior con el fin de importar y conectar los datos.
 ### Duplicados para tabla de producto
 
 
-* [Productos duplicados (conteo)](SQL\duplicados_product_conteo.sql)
+* [Productos duplicados (conteo)](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/duplicados_product_conteo.sql)
 
 | Variable | Duplicados| Acción |
 |-|-|-|
@@ -86,7 +86,7 @@ Lo anterior con el fin de importar y conectar los datos.
 ###
 Para los datos duplicados también se hizo un análisis del concatenado de toda la información.
 
-Usando [esta](SQL\duplicados_product_conteovalidacion.sql) query.
+Usando [esta](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/duplicados_product_conteovalidacion.sql) query.
 
 Dando como resultado, que tenemos 16 datos que atender. Sin embargo, se decide dejar estos datos a pesar de estar duplicados, porque no tenemos la foto para corroborar si cambia en color o estilo, a pesar de tener las mismas características. E igualmente no tenemos información de si es el mismo vendedor quien lo publica.
 
@@ -95,7 +95,7 @@ Quedan 1351 datos posterior a la limpieza de duplicados.
 ### Duplicados en tabla review
 
 
-* [Reviews duplicadas (conteo)](SQL\duplicados_review_conteo.sql)
+* [Reviews duplicadas (conteo)](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/duplicados_review_conteo.sql)
 
 
 | Variable | Duplicados| Acción |
@@ -115,7 +115,7 @@ Los duplicados se basarán en la coincidencia al mismo tiempo y con la misma inf
 * product_link 
 * product_id
 
-> Finalizando la limpieza de los duplicados con las combinaciones anteriores, quedaron datos duplicados en product_id, los cuales se excluyeron con la [siguiente query](SQL\clean_product_id_review.sql). 
+> Finalizando la limpieza de los duplicados con las combinaciones anteriores, quedaron datos duplicados en product_id, los cuales se excluyeron con la [siguiente query](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/clean_product_id_review.sql). 
 
 ---
 
@@ -256,7 +256,10 @@ Correlación de rating y discount percentage: 0.17
 
 3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas que aquellos con reseñas solo textuales.
 
-![image](https://github.com/user-attachments/assets/f5c3ace1-770d-4b14-b68f-d3427c45c799)
+![image](https://github.com/user-attachments/assets/c15d3c09-0cee-49fb-bf0d-88ce6e0cb0af)
+
+![image](https://github.com/user-attachments/assets/ed77b41a-6a93-488e-a4a5-ed7d853bd784)
+
 
 > Esta hipótesis es inválida, ya que se puede observar que en las calificaciones más altas la cantidad de imágenes tiende a cero
 
@@ -484,5 +487,5 @@ Se hizo este análisis de probabilidad para las variables:
 
 | Analista | Video Loom | Dashboard | Exploratorio en Python | Presentación |
 |----------|------------|-----------|------------------------|--------------|
-| Osiris Berbesia | Loom Osiris | [Dashboard](https://public.tableau.com/app/profile/osiris.berbesia/viz/DashboardAmazonIndia/Dashboard1?publish=yes)  |              | [Presentación Figma](https://www.figma.com/design/kWDzLWy7G5lGxoE4RvouZa/Proyecto4-DataLab-(Amazon-sales)?node-id=2938-3800&t=FxovT2dge4PrcYEU-1)      |
+| Osiris Berbesia | Loom Osiris | [Dashboard](https://public.tableau.com/app/profile/osiris.berbesia/viz/DashboardAmazonIndia/Dashboard1?publish=yes)  |  [Exploratorio Python](https://github.com/osirisberbesia/4DataLab/blob/main/Otros/exploratorio_datalab.ipynb)         | [Presentación Figma](https://www.figma.com/design/kWDzLWy7G5lGxoE4RvouZa/Proyecto4-DataLab-(Amazon-sales)?node-id=2938-3800&t=FxovT2dge4PrcYEU-1)      |
 | Karen Fonseca | Loom Karen| [Dashboard](https://public.tableau.com/app/profile/karen.fonseca6131/viz/Datalab_17247833763220/Dashboard1?publish=yes)  | [Google Colab](https://colab.research.google.com/drive/1xuTFoIijZUMkFRIfq1gIdGF2jkDPqiPI?usp=sharing)              | [Presentación Figma](https://www.figma.com/design/kWDzLWy7G5lGxoE4RvouZa/Proyecto4-DataLab-(Amazon-sales)?node-id=2938-3800&t=FxovT2dge4PrcYEU-1)    |
