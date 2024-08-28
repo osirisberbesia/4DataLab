@@ -21,6 +21,7 @@ Esta base de datos, que incluye variables numéricas y de texto sobre reseñas e
 
 ## Conectar/Importar Datos a Herramientas
 
+
 Desde los dataset .csv, llamados amazon_product y amazon_reviews, para trabajarlos se utilizó:
 
 * BigQuery/PostgreSQL 
@@ -48,8 +49,37 @@ Lo anterior con el fin de importar y conectar los datos.
 ||||
 
 ### Nulos para tabla de reviews
+=======
 
-* Consulta para la data: [Reviews](SQL\nulos_indentificar_review.sql)
+Desde los dataset .csv, llamados amazon_product y amazon_reviews, para trabajarlos se utilizó:
+
+* BigQuery/PostgreSQL 
+* Google Colab
+* Tableau
+
+Lo anterior con el fin de importar y conectar los datos. 
+
+
+## Identificar y Manejar Valores Nulos
+
+### Nulos para tabla de productos
+* Consulta para la data: [Productos](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/nulos_indentificar_products.sql)
+
+
+| Variable | Nulos| Acción |
+|-|-|-|
+| product_id |  0 | Ninguna acción requerida | 
+| product_name |  0 |Ninguna acción requerida  | 
+| category |  0 | Ninguna acción requerida | 
+| discounted_price |  0 | Ninguna acción requerida | 
+| actual_price |  0 |Ninguna acción requerida | 
+| discount_percentage |  0 | Ninguna acción requerida | 
+| about_product | 4 | No se realiza ningún cambio ya que al eliminar los duplicados de product_id, se desaparecen estos nulos |
+||||
+
+### Nulos para tabla de reviews
+
+* Consulta para la data: [Reviews](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/nulos_indentificar_review.sql)
 
 
 | Variable | Nulos | Acción |
@@ -68,10 +98,11 @@ Lo anterior con el fin de importar y conectar los datos.
 
 ## Identificar y Manejar Valores Duplicados
 
+
 ### Duplicados para tabla de producto
 
 
-* [Productos duplicados (conteo)](SQL\duplicados_product_conteo.sql)
+* [Productos duplicados (conteo)](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/duplicados_product_conteo.sql)
 
 | Variable | Duplicados| Acción |
 |-|-|-|
@@ -86,7 +117,7 @@ Lo anterior con el fin de importar y conectar los datos.
 ###
 Para los datos duplicados también se hizo un análisis del concatenado de toda la información.
 
-Usando [esta](SQL\duplicados_product_conteovalidacion.sql) query.
+Usando [esta](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/duplicados_product_conteovalidacion.sql) query.
 
 Dando como resultado, que tenemos 16 datos que atender. Sin embargo, se decide dejar estos datos a pesar de estar duplicados, porque no tenemos la foto para corroborar si cambia en color o estilo, a pesar de tener las mismas características. E igualmente no tenemos información de si es el mismo vendedor quien lo publica.
 
@@ -95,7 +126,7 @@ Quedan 1351 datos posterior a la limpieza de duplicados.
 ### Duplicados en tabla review
 
 
-* [Reviews duplicadas (conteo)](SQL\duplicados_review_conteo.sql)
+* [Reviews duplicadas (conteo)](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/duplicados_review_conteo.sql)
 
 
 | Variable | Duplicados| Acción |
@@ -115,7 +146,7 @@ Los duplicados se basarán en la coincidencia al mismo tiempo y con la misma inf
 * product_link 
 * product_id
 
-> Finalizando la limpieza de los duplicados con las combinaciones anteriores, quedaron datos duplicados en product_id, los cuales se excluyeron con la [siguiente query](SQL\clean_product_id_review.sql). 
+> Finalizando la limpieza de los duplicados con las combinaciones anteriores, quedaron datos duplicados en product_id, los cuales se excluyeron con la [siguiente query](https://github.com/osirisberbesia/4DataLab/blob/main/SQL/clean_product_id_review.sql). 
 
 ---
 
@@ -142,6 +173,7 @@ Boxplot de variable reviews_content (Variable que me cuenta los review_id)
 
 ![image](https://github.com/user-attachments/assets/4ccce97e-899d-4062-a8ac-e43395451669)
 
+
 Boxplot de variable rating (Variable con su calificación)
 
 ![rating box](https://github.com/user-attachments/assets/76be8013-ae64-41d1-9cf8-6410af8ec2f9)
@@ -156,6 +188,22 @@ Boxplot de variable rating_count (conteo de personas que votaron por su califica
 ## Identificar y Manejar Datos Discrepantes en Variables Categóricas y Numéricas
 
 En la variable 'rating' se encontro un dato con el simbolo '|', este campo se reemplazo con el numero 0
+
+
+Boxplot de variable rating (Variable con su calificación)
+
+![rating box](https://github.com/user-attachments/assets/76be8013-ae64-41d1-9cf8-6410af8ec2f9)
+
+Boxplot de variable rating_count (conteo de personas que votaron por su calificación)
+
+![rating_count boxplot](https://github.com/user-attachments/assets/66d62105-cf05-4875-9b7d-a47d1cfbffa7)
+
+> Al identificar los outliers, por la naturaleza de estos, se decide dejarlos por fuera del analisis.
+
+
+## Identificar y Manejar Datos Discrepantes en Variables Categóricas y Numéricas
+
+En la variable 'rating' se encontró un dato con el símbolo '|', este campo se reemplazo con el numero 0
 
 
 ## Comprobar y Cambiar Tipo de Dato
@@ -178,15 +226,32 @@ Para la variable 'rating' se cambio de STRING a FLOAT64, con la función CAST
 ## Unir Tablas
 
 > Despues de realizar la limpieza de datos, en donde se identificaron y manejaron datos nulos, duplicados, discrepantes y atipicos (outliers), se unieron las tablas con el nombre "amazon_unificado".
+=======
+|rating_count | category_rating_count | Segmentación del conteo de rating por cuartiles, las categorías son, Poco confiable (menores a 932), Medio confiable ( entre 932 y 3714), Moderadamente confiable (entre 3714 y 13156), Confiable (Mayores a 13156) |
+| review_content | image_count | Conteo de link de imágenes dentro del contenido de review |
+| category_rating y category_rating_count | rating_segmentation| Concatenación de las variables creadas category_rating y category_rating_count, un ejemplo de retorno es 'Alto (Poco confiable)' |
+
+## Unir Tablas
+
+> Después de realizar la limpieza de datos, en donde se identificaron y manejaron datos nulos, duplicados, discrepantes y atípicos (outliers), se unieron las tablas con el nombre "amazon_unificado".
+
 
 
 # Análisis Exploratorio
+
 
 Para este análisis se exploraron la visualizaron de las hipotesis planteadas al inicio del proyecto.
 
 ## Agrupar Datos Según Variables Categóricas
 
 Se crearon nuevas variables categoricas que agrupan datos según confiabilidad (Rating Segmentation), según nivel de descuento (Category Discount), y según nivel de calificación (Category Rating).
+=======
+Para este análisis se exploraron la visualizaron de las hipótesis planteadas al inicio del proyecto.
+
+## Agrupar Datos Según Variables Categóricas
+
+Se crearon nuevas variables categóricas que agrupan datos según confiabilidad (Rating Segmentation), según nivel de descuento (Category Discount), y según nivel de calificación (Category Rating).
+
 
 ## Visualizar las Variables Categóricas
 
@@ -240,7 +305,9 @@ Correlación de rating y discount percentage: 0.17
 
 ![image](https://github.com/user-attachments/assets/9b66698f-546c-4025-98ad-66182f91bef7)
 
-> Esta hipotesis es verdadera, se puede obervar en el grafico que en los productos con un rating clasificado como Alto, tienen mas votos que en el de Bajo
+
+> Esta hipótesis es verdadera, se puede observar en el gráfico que en los productos con un rating clasificado como Alto, tienen mas votos que en el de Bajo
+
 
 ![image](https://github.com/user-attachments/assets/252dfeda-ea32-4608-a095-d40d19affa24)
 
@@ -251,6 +318,7 @@ Correlación de rating y discount percentage: 0.17
 ![image](https://github.com/user-attachments/assets/fbb0fe1a-7211-40dc-a4e8-81ccf6448f0e)
 
 ![image](https://github.com/user-attachments/assets/6c157ba4-99a0-4573-bdf5-abd837e52668)
+
 
 > Esta hipotesis es verdadera, se puede observar que para la catergoria de Home&Kitchen y Electronics estan muy parejas sin embargo para las demas catgorias si se puede ver una diferencia en rating, segun el grafico de regresión lineal, tienen una relación negatvia debil.
 
@@ -264,15 +332,33 @@ Correlación de rating y discount percentage: 0.17
 
 Grafica 1
 
+> Esta hipótesis es verdadera, se puede observar que para la categoría de Home&Kitchen y Electronics estan muy parejas sin embargo para las demás categorías si se puede ver una diferencia en rating, segun el gráfico de regresión lineal, tienen una relación negativa débil.
+
+3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas que aquellos con reseñas solo textuales.
+
+![image](https://github.com/user-attachments/assets/c15d3c09-0cee-49fb-bf0d-88ce6e0cb0af)
+
+![image](https://github.com/user-attachments/assets/ed77b41a-6a93-488e-a4a5-ed7d853bd784)
+
+
+> Esta hipótesis es inválida, ya que se puede observar que en las calificaciones más altas la cantidad de imágenes tiende a cero
+
+4. **Relación entre descuento y puntuación:** A mayor descuento, mejor será la calificación del producto.
+
+Gráfica 1
+
+
 ![image](https://github.com/user-attachments/assets/970adb30-c5a2-4dfa-ad97-e30988a2c22a)
 
 
-> Esta hipotesis es negativa, no tienen relación el porcentaje de descuento con su puntuación, esto se pudo validar a través del test de pearson con un resultado de -0.017, y en las graficas de Tableau.
+> Esta hipótesis es negativa, no tienen relación el porcentaje de descuento con su puntuación, esto se pudo validar a través del test de Pearson con un resultado de -0.017, y en las gráficas de Tableau.
+
 
 
 5. **Descuento por categoría:** Variaciones significativas en los porcentajes de descuento entre productos de diferentes categorías.
 
 ![image](https://github.com/user-attachments/assets/100a28ba-e010-4422-86be-323a1cc9c88a)
+
 
 > Esta hipotesis es verdadera, si hay diferencias significativas entre los porcentajes de descuento entre productos de diferentes categorías. La diferencia mas grande es entre Home Improvement y Office Products. Un hallazgo es que la categoria de Toys&Games no tienen descuento
 
@@ -403,7 +489,10 @@ Hicimos cohorte de rating, de actual_price y discount_percentage
 
 ## Regresión Lineal
 
-Para este analisis se convirtio a variable numerica, las variables categoricas Rating Segmentation y General Category. Se hizo este analisis para las combinaciones:
+
+Para este análisis se convirtió a variable numérica, las variables categóricas Rating Segmentation y General Category. Se hizo este análisis para las combinaciones:
+
+
 * rating_count_complete y segmentation_rating_num
 * rating y general_category_num
 * rating y image_count
@@ -417,15 +506,17 @@ Para este analisis se convirtio a variable numerica, las variables categoricas R
 
 ## Regresión Logística
 
+
 Se hizo este analisis de probabilidad para las variables:
+
 
 * Discount_percentage
 * Actual_price
 
-![image](https://github.com/user-attachments/assets/6f81ec84-4fcc-411e-b65f-291c436d039f)
 
+![image](https://github.com/user-attachments/assets/f44dfaca-b59f-4999-bcd5-8eaf074a1440)
 
-![image](https://github.com/user-attachments/assets/c90e144a-421c-4151-bd6d-f7022105d470)
+![image](https://github.com/user-attachments/assets/576232ac-83ba-43b0-8e41-e58f666e167e)
 
 
 
@@ -442,9 +533,10 @@ Se hizo este analisis de probabilidad para las variables:
 
 4. **Revisión de productos con imágenes:** Las reseñas sin imágenes tienden a ser mejor valoradas, lo que subraya la irrelevancia de incluir imágenes en las reseñas para mejorar la percepción del producto.
 
-5. **La mayoria de productos son calificados con un rating alto:** Lo que sugiere que los clientes estan obteniendo lo que esperan del producto.
+5. **La mayoría de productos son calificados con un rating alto:** Lo que sugiere que los clientes están obteniendo lo que esperan del producto.
 
-6. **La categoria Car&Motorbikes es la que tiene el promedio de rating mas bajo:** No se espera rating alto, suponemos que es debido a que es un producto que se adquiere de manera presencialmente.
+6. **La categoría Car&Motorbikes es la que tiene el promedio de rating mas bajo:** No se espera rating alto, suponemos que es debido a que es un producto que se adquiere de manera presencialmente.
+
 
 ## Recomendaciones
 
@@ -482,10 +574,12 @@ Se hizo este analisis de probabilidad para las variables:
 9. **Relación entre precio y calificación:** Se observa que los productos con precios más altos tienden a recibir mejores calificaciones, lo que indica una preferencia por parte de los usuarios hacia productos más costosos.
 
 
-## Enlaces de interes
+
+## Enlaces de interés
+
 
 | Analista | Video Loom | Dashboard | Exploratorio en Python | Presentación |
 |----------|------------|-----------|------------------------|--------------|
-| Osiris Berbesia | Enlace 1  | [Dashboard](https://public.tableau.com/app/profile/osiris.berbesia/viz/DashboardAmazonIndia/Dashboard1?publish=yes)  | Enlace 3               | Enlace 4     |
-| Karen Fonseca | Enlace 5  | [Dashboard](https://public.tableau.com/app/profile/karen.fonseca6131/viz/Datalab_17247833763220/Dashboard1?publish=yes)  | [Google Colab](https://colab.research.google.com/drive/1xuTFoIijZUMkFRIfq1gIdGF2jkDPqiPI?usp=sharing)              | Enlace 8     |
+| Osiris Berbesia | Loom Osiris | [Dashboard](https://public.tableau.com/app/profile/osiris.berbesia/viz/DashboardAmazonIndia/Dashboard1?publish=yes)  |  [Exploratorio Python](https://github.com/osirisberbesia/4DataLab/blob/main/Otros/exploratorio_datalab.ipynb)         | [Presentación Figma](https://www.figma.com/design/kWDzLWy7G5lGxoE4RvouZa/Proyecto4-DataLab-(Amazon-sales)?node-id=2938-3800&t=FxovT2dge4PrcYEU-1)      |
+| Karen Fonseca | Loom Karen| [Dashboard](https://public.tableau.com/app/profile/karen.fonseca6131/viz/Datalab_17247833763220/Dashboard1?publish=yes)  | [Google Colab](https://colab.research.google.com/drive/1xuTFoIijZUMkFRIfq1gIdGF2jkDPqiPI?usp=sharing)              | [Presentación Figma](https://www.figma.com/design/kWDzLWy7G5lGxoE4RvouZa/Proyecto4-DataLab-(Amazon-sales)?node-id=2938-3800&t=FxovT2dge4PrcYEU-1)    |
 

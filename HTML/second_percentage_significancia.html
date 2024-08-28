@@ -1,0 +1,2043 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            body {
+                background-color: #2e2e2e;
+                color: #ffffff;
+                font-family: Arial, sans-serif;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            th {
+                background-color: #444444;
+            }
+            tr:nth-child(even) {
+                background-color: #333333;
+            }
+            tr:nth-child(odd) {
+                background-color: #222222;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Resultados de Pruebas Estadísticas</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Categoría General</th>
+      <th>Segunda Categoría</th>
+      <th>Distribución Normal</th>
+      <th>Tamaño de Muestra</th>
+      <th>Prueba Recomendada</th>
+      <th>Prueba Realizada</th>
+      <th>P-Valor</th>
+      <th>Resultado</th>
+      <th>Por Qué</th>
+      <th>Hipótesis</th>
+      <th>Resultado Hipótesis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Electronics</td>
+      <td>Office Supplies</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>17</td>
+      <td>Mann-Whitney U</td>
+      <td>Mann-Whitney U</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Electronics</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>267</td>
+      <td>Mann-Whitney U</td>
+      <td>Mann-Whitney U</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Stationery & Art Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>267</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Kitchen Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>267</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Home Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>267</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Computing Accessories</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Cleaning Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Wearable Technology</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>12</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Health & Personal Care</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>12</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Gaming</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>4</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Kitchenware</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>4</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Networking</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>4</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Data Storage</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>4</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Automotive</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>4</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Power Supplies</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Audio Accessories</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Fashion Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Office Supplies</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>3</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Electronics</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>5</td>
+      <td>Mann-Whitney U</td>
+      <td>Mann-Whitney U</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Stationery & Art Supplies</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>3</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Kitchen Appliances</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>285</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Home Appliances</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>68</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Computing Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>68</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Cleaning Appliances</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>6</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Wearable Technology</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>6</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Health & Personal Care</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>10</td>
+      <td>Mann-Whitney U</td>
+      <td>Mann-Whitney U</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Gaming</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>10</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Kitchenware</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>12</td>
+      <td>Mann-Whitney U</td>
+      <td>Mann-Whitney U</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Networking</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>12</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Data Storage</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>12</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Automotive</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>12</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Power Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>12</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Audio Accessories</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>4</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Home&Kitchen</td>
+      <td>Fashion Accessories</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Office Supplies</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>6</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Electronics</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>210</td>
+      <td>Mann-Whitney U</td>
+      <td>Mann-Whitney U</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Stationery & Art Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>210</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Kitchen Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>210</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Home Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>210</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Computing Accessories</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>49</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Cleaning Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>49</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Wearable Technology</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>49</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Health & Personal Care</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>49</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Gaming</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>12</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Kitchenware</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Networking</td>
+      <td><span style="color:#00BFFF">Normal</span></td>
+      <td>3</td>
+      <td>Prueba t</td>
+      <td>Prueba t</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Data Storage</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Automotive</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Power Supplies</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Audio Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Computers&Accessories</td>
+      <td>Fashion Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Office Supplies</td>
+      <td><span style="color:#D8A8E3">No Normal</span></td>
+      <td>17</td>
+      <td>Mann-Whitney U</td>
+      <td>Mann-Whitney U</td>
+      <td>1.0</td>
+      <td><span style="color:#FF0000">No significativa</span></td>
+      <td>El valor p indica la significancia de la diferencia entre los grupos</td>
+      <td>No hay diferencia significativa en el porcentaje de descuento (`discount_percentage`) entre diferentes categorías generales (`general_category`) y secundarias (`second_category`). Las diferencias en los descuentos se deben al azar y no a la influencia de las categorías.</td>
+      <td>No se rechaza</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Electronics</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Stationery & Art Supplies</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Kitchen Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Home Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Computing Accessories</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Cleaning Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Wearable Technology</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Health & Personal Care</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Gaming</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Kitchenware</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Networking</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Data Storage</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Automotive</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Power Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Audio Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>OfficeProducts</td>
+      <td>Fashion Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Office Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Electronics</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Stationery & Art Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Kitchen Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Home Appliances</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Computing Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Cleaning Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Wearable Technology</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Health & Personal Care</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Gaming</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Kitchenware</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Networking</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Data Storage</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Automotive</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Power Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Audio Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Car&Motorbike</td>
+      <td>Fashion Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Office Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Electronics</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Stationery & Art Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Kitchen Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Home Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Computing Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Cleaning Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Wearable Technology</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Health & Personal Care</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Gaming</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Kitchenware</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Networking</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Data Storage</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Automotive</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Power Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Audio Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>MusicalInstruments</td>
+      <td>Fashion Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Office Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Electronics</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Stationery & Art Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Kitchen Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Home Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Computing Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Cleaning Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Wearable Technology</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Health & Personal Care</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Gaming</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Kitchenware</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Networking</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Data Storage</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Automotive</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>2</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Power Supplies</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Audio Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>HomeImprovement</td>
+      <td>Fashion Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Office Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Electronics</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Stationery & Art Supplies</td>
+      <td><span style="color:#D8A8E3">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Tamaño insuficiente</span></td>
+      <td>Tamaño de muestra insuficiente para pruebas estadísticas</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Kitchen Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Home Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Computing Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Cleaning Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Wearable Technology</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Health & Personal Care</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Gaming</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Kitchenware</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Networking</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Data Storage</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Automotive</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Power Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Audio Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Toys&Games</td>
+      <td>Fashion Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Office Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Electronics</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Stationery & Art Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Kitchen Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Home Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Computing Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Cleaning Appliances</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Wearable Technology</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Health & Personal Care</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Gaming</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Kitchenware</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Networking</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Data Storage</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Automotive</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Power Supplies</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Audio Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+    <tr>
+      <td>Health&PersonalCare</td>
+      <td>Fashion Accessories</td>
+      <td><span style="color:No aplicable">No aplicable</span></td>
+      <td>1</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+      <td><span style="color:#FF0000">Datos insuficientes</span></td>
+      <td>Datos insuficientes para realizar la prueba</td>
+      <td>No aplicable</td>
+      <td>No aplicable</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    

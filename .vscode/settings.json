@@ -10,5 +10,16 @@
             "username": "osiris",
             "password": "121041"
         }
+    ],
+    "cSpell.words": [
+        "Accionables",
+        "Colab",
+        "datalab",
+        "discrepantes",
+        "figsize",
+        "NTILE",
+        "osiris",
+        "psycopg",
+        "sqlalchemy"
     ]
 }
