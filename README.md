@@ -485,5 +485,5 @@ Se hizo este analisis de probabilidad para las variables:
 | Analista | Video Loom | Dashboard | Exploratorio en Python | Presentación |
 |----------|------------|-----------|------------------------|--------------|
 | Osiris Berbesia | Enlace 1  | [Dashboard](https://public.tableau.com/app/profile/osiris.berbesia/viz/DashboardAmazonIndia/Dashboard1?publish=yes)  | Enlace 3               | Enlace 4     |
-| Karen Fonseca | Enlace 5  | [Dashboard](https://public.tableau.com/app/profile/karen.fonseca6131/viz/Datalab_17247833763220/Dashboard1?publish=yes)  | Enlace 7               | Enlace 8     |
+| Karen Fonseca | Enlace 5  | [Dashboard](https://public.tableau.com/app/profile/karen.fonseca6131/viz/Datalab_17247833763220/Dashboard1?publish=yes)  | [Google Colab](https://colab.research.google.com/drive/1xuTFoIijZUMkFRIfq1gIdGF2jkDPqiPI?usp=sharing)              | Enlace 8     |
 
