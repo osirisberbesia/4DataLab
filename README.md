@@ -171,22 +171,22 @@ Para la variable 'rating' se cambio de STRING a FLOAT64, con la función CAST
 | category | specific_category | Dado que la descripción de categorías va desde la más general a la más específica, se tomó en cuenta la última categoría en la que se encuentra el producto para crear la variable 'specific_category'.|
 |discounted_percentage | category_discount | Separa el porcentaje de descuento en 4 grupos, leve (< 0.31), moderado (entre 0.31 y 0.49), intermedio (entre 0.49 y 0.62), significativo ( mayores a 0.62) |
 | rating | category_rating | Se categorizaron los rating 1, 2, 3 como 'Bajo', y 4 , 5 de rating como 'Alto'|
-|rating_count | category_rating_count | Segmentación del conteo de rating por cuartiles, las categorias son, Poco confiable (menores a 932), Medio confiable ( entre 932 y 3714), Moderadamente confiable (entre 3714 y 13156), Confiable (Mayores a 13156) |
-| review_content | image_count | Conteo de link de imagenes dentro del contenido de review |
-| category_rating y category_rating_count | rating_segmentation| Concatenacion de las variables creadas category_rating y category_rating_count, un ejemplo de retorno es 'Alto (Poco confiable)' |
+|rating_count | category_rating_count | Segmentación del conteo de rating por cuartiles, las categorías son, Poco confiable (menores a 932), Medio confiable ( entre 932 y 3714), Moderadamente confiable (entre 3714 y 13156), Confiable (Mayores a 13156) |
+| review_content | image_count | Conteo de link de imágenes dentro del contenido de review |
+| category_rating y category_rating_count | rating_segmentation| Concatenación de las variables creadas category_rating y category_rating_count, un ejemplo de retorno es 'Alto (Poco confiable)' |
 
 ## Unir Tablas
 
-> Despues de realizar la limpieza de datos, en donde se identificaron y manejaron datos nulos, duplicados, discrepantes y atipicos (outliers), se unieron las tablas con el nombre "amazon_unificado".
+> Después de realizar la limpieza de datos, en donde se identificaron y manejaron datos nulos, duplicados, discrepantes y atípicos (outliers), se unieron las tablas con el nombre "amazon_unificado".
 
 
 # Análisis Exploratorio
 
-Para este análisis se exploraron la visualizaron de las hipotesis planteadas al inicio del proyecto.
+Para este análisis se exploraron la visualizaron de las hipótesis planteadas al inicio del proyecto.
 
 ## Agrupar Datos Según Variables Categóricas
 
-Se crearon nuevas variables categoricas que agrupan datos según confiabilidad (Rating Segmentation), según nivel de descuento (Category Discount), y según nivel de calificación (Category Rating).
+Se crearon nuevas variables categóricas que agrupan datos según confiabilidad (Rating Segmentation), según nivel de descuento (Category Discount), y según nivel de calificación (Category Rating).
 
 ## Visualizar las Variables Categóricas
 
@@ -258,7 +258,7 @@ Correlación de rating y discount percentage: 0.17
 
 ![image](https://github.com/user-attachments/assets/f5c3ace1-770d-4b14-b68f-d3427c45c799)
 
-> Esta hipótesis es verdadera, en las calificaciones altas hay mas imagenes en su review_content
+> Esta hipótesis es inválida, ya que se puede observar que en las calificaciones más altas la cantidad de imágenes tiende a cero
 
 4. **Relación entre descuento y puntuación:** A mayor descuento, mejor será la calificación del producto.
 
@@ -484,5 +484,5 @@ Se hizo este análisis de probabilidad para las variables:
 
 | Analista | Video Loom | Dashboard | Exploratorio en Python | Presentación |
 |----------|------------|-----------|------------------------|--------------|
-| Osiris Berbesia | Enlace 1  | [Dashboard](https://public.tableau.com/app/profile/osiris.berbesia/viz/DashboardAmazonIndia/Dashboard1?publish=yes)  | Enlace 3               | Enlace 4     |
-| Karen Fonseca | Enlace 5  | [Dashboard](https://public.tableau.com/app/profile/karen.fonseca6131/viz/Datalab_17247833763220/Dashboard1?publish=yes)  | [Google Colab](https://colab.research.google.com/drive/1xuTFoIijZUMkFRIfq1gIdGF2jkDPqiPI?usp=sharing)              | Enlace 8     |
+| Osiris Berbesia | Loom Osiris | [Dashboard](https://public.tableau.com/app/profile/osiris.berbesia/viz/DashboardAmazonIndia/Dashboard1?publish=yes)  |              | [Presentación Figma](https://www.figma.com/design/kWDzLWy7G5lGxoE4RvouZa/Proyecto4-DataLab-(Amazon-sales)?node-id=2938-3800&t=FxovT2dge4PrcYEU-1)      |
+| Karen Fonseca | Loom Karen| [Dashboard](https://public.tableau.com/app/profile/karen.fonseca6131/viz/Datalab_17247833763220/Dashboard1?publish=yes)  | [Google Colab](https://colab.research.google.com/drive/1xuTFoIijZUMkFRIfq1gIdGF2jkDPqiPI?usp=sharing)              | [Presentación Figma](https://www.figma.com/design/kWDzLWy7G5lGxoE4RvouZa/Proyecto4-DataLab-(Amazon-sales)?node-id=2938-3800&t=FxovT2dge4PrcYEU-1)    |
