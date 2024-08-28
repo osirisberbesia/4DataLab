@@ -422,9 +422,11 @@ Se hizo este analisis de probabilidad para las variables:
 * Discount_percentage
 * Actual_price
 
-![image](https://github.com/user-attachments/assets/f44dfaca-b59f-4999-bcd5-8eaf074a1440)
+![image](https://github.com/user-attachments/assets/6f81ec84-4fcc-411e-b65f-291c436d039f)
 
-![image](https://github.com/user-attachments/assets/576232ac-83ba-43b0-8e41-e58f666e167e)
+
+![image](https://github.com/user-attachments/assets/c90e144a-421c-4151-bd6d-f7022105d470)
+
 
 
 # Presentación de Resultados
