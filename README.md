@@ -155,7 +155,7 @@ Boxplot de variable rating_count (conteo de personas que votaron por su califica
 
 ## Identificar y Manejar Datos Discrepantes en Variables Categóricas y Numéricas
 
-En la variable 'rating' se encontro un dato con el simbolo '|', este campo se reemplazo con el numero 0
+En la variable 'rating' se encontró un dato con el símbolo '|', este campo se reemplazo con el numero 0
 
 
 ## Comprobar y Cambiar Tipo de Dato
@@ -240,7 +240,7 @@ Correlación de rating y discount percentage: 0.17
 
 ![image](https://github.com/user-attachments/assets/9b66698f-546c-4025-98ad-66182f91bef7)
 
-> Esta hipotesis es verdadera, se puede obervar en el grafico que en los productos con un rating clasificado como Alto, tienen mas votos que en el de Bajo
+> Esta hipótesis es verdadera, se puede observar en el gráfico que en los productos con un rating clasificado como Alto, tienen mas votos que en el de Bajo
 
 ![image](https://github.com/user-attachments/assets/252dfeda-ea32-4608-a095-d40d19affa24)
 
@@ -252,29 +252,29 @@ Correlación de rating y discount percentage: 0.17
 
 ![image](https://github.com/user-attachments/assets/6c157ba4-99a0-4573-bdf5-abd837e52668)
 
-> Esta hipotesis es verdadera, se puede observar que para la catergoria de Home&Kitchen y Electronics estan muy parejas sin embargo para las demas catgorias si se puede ver una diferencia en rating, segun el grafico de regresión lineal, tienen una relación negatvia debil.
+> Esta hipótesis es verdadera, se puede observar que para la categoría de Home&Kitchen y Electronics estan muy parejas sin embargo para las demás categorías si se puede ver una diferencia en rating, segun el gráfico de regresión lineal, tienen una relación negativa débil.
 
 3. **Impacto de las imágenes en las reseñas:** Los productos con reseñas que incluyen imágenes adicionales tienden a recibir calificaciones más altas que aquellos con reseñas solo textuales.
 
 ![image](https://github.com/user-attachments/assets/f5c3ace1-770d-4b14-b68f-d3427c45c799)
 
-> Esta hipotesis es verdadera, en las calificaciones altas hay mas imagenes en su review_content
+> Esta hipótesis es verdadera, en las calificaciones altas hay mas imagenes en su review_content
 
 4. **Relación entre descuento y puntuación:** A mayor descuento, mejor será la calificación del producto.
 
-Grafica 1
+Gráfica 1
 
 ![image](https://github.com/user-attachments/assets/970adb30-c5a2-4dfa-ad97-e30988a2c22a)
 
 
-> Esta hipotesis es negativa, no tienen relación el porcentaje de descuento con su puntuación, esto se pudo validar a través del test de pearson con un resultado de -0.017, y en las graficas de Tableau.
+> Esta hipótesis es negativa, no tienen relación el porcentaje de descuento con su puntuación, esto se pudo validar a través del test de Pearson con un resultado de -0.017, y en las gráficas de Tableau.
 
 
 5. **Descuento por categoría:** Variaciones significativas en los porcentajes de descuento entre productos de diferentes categorías.
 
 ![image](https://github.com/user-attachments/assets/100a28ba-e010-4422-86be-323a1cc9c88a)
 
-> Esta hipotesis es verdadera, si hay diferencias significativas entre los porcentajes de descuento entre productos de diferentes categorías. La diferencia mas grande es entre Home Improvement y Office Products. Un hallazgo es que la categoria de Toys&Games no tienen descuento
+> Esta hipótesis es verdadera, si hay diferencias significativas entre los porcentajes de descuento entre productos de diferentes categorías. La diferencia mas grande es entre Home Improvement y Office Products. Un hallazgo es que la categoria de Toys&Games no tienen descuento
 
 
 ## Calcular Riesgo Relativo
@@ -403,7 +403,7 @@ Hicimos cohorte de rating, de actual_price y discount_percentage
 
 ## Regresión Lineal
 
-Para este analisis se convirtio a variable numerica, las variables categoricas Rating Segmentation y General Category. Se hizo este analisis para las combinaciones:
+Para este análisis se convirtió a variable numérica, las variables categóricas Rating Segmentation y General Category. Se hizo este análisis para las combinaciones:
 * rating_count_complete y segmentation_rating_num
 * rating y general_category_num
 * rating y image_count
@@ -417,7 +417,7 @@ Para este analisis se convirtio a variable numerica, las variables categoricas R
 
 ## Regresión Logística
 
-Se hizo este analisis de probabilidad para las variables:
+Se hizo este análisis de probabilidad para las variables:
 
 * Discount_percentage
 * Actual_price
@@ -440,9 +440,9 @@ Se hizo este analisis de probabilidad para las variables:
 
 4. **Revisión de productos con imágenes:** Las reseñas sin imágenes tienden a ser mejor valoradas, lo que subraya la irrelevancia de incluir imágenes en las reseñas para mejorar la percepción del producto.
 
-5. **La mayoria de productos son calificados con un rating alto:** Lo que sugiere que los clientes estan obteniendo lo que esperan del producto.
+5. **La mayoría de productos son calificados con un rating alto:** Lo que sugiere que los clientes están obteniendo lo que esperan del producto.
 
-6. **La categoria Car&Motorbikes es la que tiene el promedio de rating mas bajo:** No se espera rating alto, suponemos que es debido a que es un producto que se adquiere de manera presencialmente.
+6. **La categoría Car&Motorbikes es la que tiene el promedio de rating mas bajo:** No se espera rating alto, suponemos que es debido a que es un producto que se adquiere de manera presencialmente.
 
 ## Recomendaciones
 
@@ -480,7 +480,7 @@ Se hizo este analisis de probabilidad para las variables:
 9. **Relación entre precio y calificación:** Se observa que los productos con precios más altos tienden a recibir mejores calificaciones, lo que indica una preferencia por parte de los usuarios hacia productos más costosos.
 
 
-## Enlaces de interes
+## Enlaces de interés
 
 | Analista | Video Loom | Dashboard | Exploratorio en Python | Presentación |
 |----------|------------|-----------|------------------------|--------------|
